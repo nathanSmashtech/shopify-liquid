@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Features</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <section id="features">
+        <div class="container">
+            <div class="headlines">
+                <h2>Clean, Gluten Free, All-Natural Ingredients</h2>
+                <h3>More than just weight support. GLP-1 Natural is made with clinically studied ingredients to help manage weight, curb cravings, and support gut health.</h3>
+            </div>
+            <div class="ingredients-container">
+                <div class="ingredient">
+                    <img alt="Dairy-free" src="https://dist1.skinnyfitdetox.com/images/fibriss/Navy_NON-GMO.png">
+                    <h3>Non-GMO</h3>
+                </div>
+                <div class="ingredient">
+                    <img alt="Dairy-free" src="https://dist1.skinnyfitdetox.com/images/glp/SF_Website_Lander_New-Design_GLP1_Claims_Vegetarian.png">
+                    <h3>Vegetarian</h3>
+                </div>
+                <div class="ingredient">
+                    <img alt="Dairy-free" src="https://dist1.skinnyfitdetox.com/images/glp/SF_Website_Lander_New-Design_GLP1_Claims_Dairy-Free.png">
+                    <h3>Dairy Free</h3>
+                </div>
+                <div class="ingredient">
+                    <img alt="Dairy-free" src="https://dist1.skinnyfitdetox.com/images/glp/SF_Website_Lander_New-Design_GLP1_Claims_All-Natural.png">
+                    <h3>All Natural</h3>
+                </div>
+            </div>
+            <div class="button-container">
+                <div class="button">SAVE 50% TODAY »</div>
+                <p class="guarantee"><span class="checkmark"></span> FREE Shipping + $50 in FREE Gifts.</p>
+                <div class="button border">Look at the Label <span class="plus">+</span></div>
+            </div>
+        </div>
+    </section>
+    <div class="label-modal">
+        <div class="modal-box">
+            <div class="close">×</div>
+            <img src="https://dist1.skinnyfitdetox.com/images/hero/swiper/glp/SF_Website_Lander_Carousel-Test_GLP1_9.jpg">
+        </div>
+    </div>
+    <script>
+        const labelModal = document.querySelector('.label-modal');
+        const labelButton = document.querySelector('.button.border');
+        const closeButton = document.querySelector('.close');
+
+        labelButton.addEventListener('click', () => {
+            labelModal.style.display = 'flex';
+        });
+
+        closeButton.addEventListener('click', () => {
+            labelModal.style.display = 'none';
+        });
+
+        window.addEventListener('click', (e) => {
+            if (e.target === labelModal) {
+                labelModal.style.display = 'none';
+            }
+        });
+    </script>
+  </body>
+</html>

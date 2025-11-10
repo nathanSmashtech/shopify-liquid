@@ -1,0 +1,46 @@
+@import url("https://fonts.googleapis.com/css?family=Muli:100,200,300,400,500,600,700");
+body {
+  margin: 0;
+  padding: 0;
+}
+
+#pricing-table {
+  font-family: Muli, helvetica, verdana, arial, sans-serif;
+  padding: 35px 0;
+  color: #363636;
+}
+#pricing-table .container {
+  margin: 0 auto;
+  padding: 0 15px;
+  box-sizing: border-box;
+}
+@media (min-width: 576px) {
+  #pricing-table .container {
+    max-width: 576px;
+  }
+}
+@media (min-width: 768px) {
+  #pricing-table .container {
+    max-width: 768px;
+  }
+}
+@media (min-width: 992px) {
+  #pricing-table .container {
+    max-width: 992px;
+  }
+}
+@media (min-width: 1200px) {
+  #pricing-table .container {
+    max-width: 1200px;
+  }
+}
+#pricing-table .headlines {
+  padding: 0 0 35px;
+}
+#pricing-table .headlines h2 {
+  margin: 0 0 15px;
+  font-size: 32px;
+  font-weight: 700;
+  color: #1e204a;
+  text-align: center;
+}/*# sourceMappingURL=style.css.map */

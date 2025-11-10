@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css?family=Muli:100,200,300,400,500,600,700');
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#top-bar {
+    background: #1e204a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 50px;
+    font-family: Muli, helvetica, verdana, arial, sans-serif;
+
+    p {
+        margin: 0;
+        font-size: 18px;
+        font-weight: 700;
+        color: #ffc107;
+
+        @media (max-width: 767px) {
+            font-size: 16px;
+        }
+        @media (max-width: 759px) {
+            font-size: 13px;
+        }
+    }
+}
