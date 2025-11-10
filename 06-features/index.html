@@ -38,17 +38,17 @@
                 <div class="button border">Look at the Label <span class="plus">+</span></div>
             </div>
         </div>
-    </section>
-    <div class="label-modal">
-        <div class="modal-box">
-            <div class="close">×</div>
-            <img src="https://dist1.skinnyfitdetox.com/images/hero/swiper/glp/SF_Website_Lander_Carousel-Test_GLP1_9.jpg">
+        <div class="label-modal">
+            <div class="modal-box">
+                <div class="close label-close">×</div>
+                <img src="https://dist1.skinnyfitdetox.com/images/hero/swiper/glp/SF_Website_Lander_Carousel-Test_GLP1_9.jpg">
+            </div>
         </div>
-    </div>
+    </section>
     <script>
         const labelModal = document.querySelector('.label-modal');
         const labelButton = document.querySelector('.button.border');
-        const closeButton = document.querySelector('.close');
+        const closeButton = document.querySelector('.label-close');
 
         labelButton.addEventListener('click', () => {
             labelModal.style.display = 'flex';

@@ -13,6 +13,9 @@ body {
     text-align: center;
     height: 50px;
     font-family: Muli, helvetica, verdana, arial, sans-serif;
+    position: sticky;
+    top: 0;
+    z-index: 100;
 
     p {
         margin: 0;

@@ -21,6 +21,10 @@ body {
     display: block;
   }
 }
+#ingredients .mobile-img img {
+  display: block;
+  width: 100%;
+}
 #ingredients .container {
   margin: 0 auto;
   padding: 0 15px;
@@ -147,9 +151,7 @@ body {
   width: 8px;
   border-bottom: 3px solid #28a745;
   border-right: 3px solid #28a745;
-  position: relative;
-  top: 2px;
-  margin-right: 2px;
+  margin-right: 5px;
 }
 #ingredients .container .ingredients-container .right {
   background: url(https://dist1.skinnyfitdetox.com/images/new-lander/Collagen-Types_Desktop_02.jpg);

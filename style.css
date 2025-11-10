@@ -4,6 +4,35 @@ body {
   padding: 0;
 }
 
+#top-bar {
+  background: #1e204a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 50px;
+  font-family: Muli, helvetica, verdana, arial, sans-serif;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+#top-bar p {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 700;
+  color: #ffc107;
+}
+@media (max-width: 767px) {
+  #top-bar p {
+    font-size: 16px;
+  }
+}
+@media (max-width: 759px) {
+  #top-bar p {
+    font-size: 13px;
+  }
+}
+
 #hero {
   font-family: Muli, helvetica, verdana, arial, sans-serif;
   color: #363636;
@@ -996,4 +1025,1266 @@ body {
 #hero .swiper-pagination-bullet-active {
   background: #000 !important;
   opacity: 0.75 !important;
+}
+
+#testimonials {
+  font-family: Muli, helvetica, verdana, arial, sans-serif;
+  background: #f9f9f8;
+  padding: 35px 0;
+  color: #363636;
+}
+#testimonials .container {
+  margin: 0 auto;
+  padding: 0 15px;
+  box-sizing: border-box;
+}
+@media (min-width: 576px) {
+  #testimonials .container {
+    max-width: 576px;
+  }
+}
+@media (min-width: 768px) {
+  #testimonials .container {
+    max-width: 768px;
+  }
+}
+@media (min-width: 992px) {
+  #testimonials .container {
+    max-width: 992px;
+  }
+}
+@media (min-width: 1200px) {
+  #testimonials .container {
+    max-width: 1200px;
+  }
+}
+#testimonials .headlines {
+  padding: 0 0 35px;
+}
+#testimonials .headlines h2 {
+  margin: 0 0 15px;
+  font-size: 32px;
+  font-weight: 700;
+  color: #1e204a;
+  text-align: center;
+}
+#testimonials .headlines h3 {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
+}
+#testimonials .testimonials {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 35px;
+}
+@media (max-width: 767px) {
+  #testimonials .testimonials {
+    display: block;
+  }
+}
+#testimonials .testimonials .testimonial {
+  width: 350px;
+}
+@media (max-width: 1199px) {
+  #testimonials .testimonials .testimonial {
+    width: 300px;
+  }
+}
+@media (max-width: 991px) {
+  #testimonials .testimonials .testimonial {
+    width: 230px;
+  }
+}
+@media (max-width: 767px) {
+  #testimonials .testimonials .testimonial {
+    width: 350px;
+    margin: 0 auto 35px;
+  }
+}
+@media (max-width: 399px) {
+  #testimonials .testimonials .testimonial {
+    width: 100%;
+  }
+}
+#testimonials .testimonials .testimonial .testimonial-image {
+  display: block;
+  width: 100%;
+}
+#testimonials .testimonials .testimonial .star-rating {
+  display: block;
+  width: 150px;
+  margin: 0 auto;
+}
+#testimonials .testimonials .testimonial h4 {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 700;
+  text-align: center;
+}
+#testimonials .testimonials .testimonial p.quote {
+  margin: 10px 0 0;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.5;
+}
+@media (max-width: 767px) {
+  #testimonials .testimonials .testimonial p.quote {
+    text-align: center;
+  }
+}
+#testimonials .testimonials .testimonial p.name {
+  margin: 10px 0 0;
+  font-size: 20px;
+  font-weight: 500;
+}
+@media (max-width: 767px) {
+  #testimonials .testimonials .testimonial p.name {
+    text-align: center;
+  }
+}
+#testimonials small {
+  display: block;
+  font-size: 13px;
+  font-weight: 400;
+  font-style: italic;
+  text-align: center;
+  color: #696969;
+}
+#testimonials .button-container {
+  margin: 30px 0 0;
+  text-align: center;
+}
+#testimonials .button-container .button {
+  display: inline-block;
+  padding: 25px 55px;
+  border-radius: 40px;
+  font-size: 27px;
+  font-weight: 700;
+  text-align: center;
+  color: #fff;
+  background-color: #e2188d;
+  box-shadow: 0 0 16px rgba(0, 0, 0, 0.1019607843);
+  transition: background-color 0.15s ease-in-out;
+  cursor: pointer;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, Liberation Sans, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", Segoe UI Symbol, "Noto Color Emoji";
+}
+#testimonials .button-container .button:hover {
+  background-color: #c21479;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2509803922);
+}
+#testimonials .button-container p.guarantee {
+  margin: 5px 0 0;
+  text-align: center;
+  font-size: 15px;
+  font-weight: 700;
+  color: #28a745;
+}
+#testimonials .button-container p.guarantee .checkmark {
+  display: inline-block;
+  transform: rotate(45deg);
+  height: 14px;
+  width: 8px;
+  border-bottom: 3px solid #28a745;
+  border-right: 3px solid #28a745;
+  margin-right: 5px;
+}
+
+#benefits {
+  font-family: Muli, helvetica, verdana, arial, sans-serif;
+  padding: 35px 0;
+  color: #363636;
+}
+#benefits .container {
+  margin: 0 auto;
+  padding: 0 15px;
+  box-sizing: border-box;
+}
+@media (min-width: 576px) {
+  #benefits .container {
+    max-width: 576px;
+  }
+}
+@media (min-width: 768px) {
+  #benefits .container {
+    max-width: 768px;
+  }
+}
+@media (min-width: 992px) {
+  #benefits .container {
+    max-width: 992px;
+  }
+}
+@media (min-width: 1200px) {
+  #benefits .container {
+    max-width: 1200px;
+  }
+}
+#benefits .headlines {
+  padding: 0 0 35px;
+}
+#benefits .headlines h2 {
+  margin: 0 0 15px;
+  font-size: 32px;
+  font-weight: 700;
+  color: #1e204a;
+  text-align: center;
+}
+#benefits .benefits {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  row-gap: 60px;
+}
+#benefits .benefits .item {
+  width: 350px;
+  text-align: center;
+}
+@media (max-width: 1199px) {
+  #benefits .benefits .item {
+    width: 300px;
+  }
+}
+@media (max-width: 991px) {
+  #benefits .benefits .item {
+    width: 230px;
+  }
+}
+@media (max-width: 767px) {
+  #benefits .benefits .item {
+    display: flex;
+    -moz-column-gap: 20px;
+         column-gap: 20px;
+    width: 100%;
+  }
+}
+#benefits .benefits .item img {
+  display: block;
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+}
+@media (max-width: 767px) {
+  #benefits .benefits .item img {
+    width: 75px;
+    height: 75px;
+  }
+}
+@media (max-width: 767px) {
+  #benefits .benefits .item .copy {
+    text-align: left;
+  }
+}
+#benefits .benefits .item .copy h3 {
+  margin: 20px 0 0;
+  font-size: 24px;
+  font-weight: 700;
+}
+@media (max-width: 767px) {
+  #benefits .benefits .item .copy h3 {
+    margin: 0;
+  }
+}
+#benefits .benefits .item .copy p {
+  margin: 20px 0 0;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.5;
+}
+@media (max-width: 767px) {
+  #benefits .benefits .item .copy p {
+    margin: 5px 0 0;
+  }
+}
+#benefits .button-container {
+  margin: 35px 0 0;
+  text-align: center;
+}
+#benefits .button-container .button {
+  display: inline-block;
+  padding: 25px 55px;
+  border-radius: 40px;
+  font-size: 27px;
+  font-weight: 700;
+  text-align: center;
+  color: #fff;
+  background-color: #e2188d;
+  box-shadow: 0 0 16px rgba(0, 0, 0, 0.1019607843);
+  transition: background-color 0.15s ease-in-out;
+  cursor: pointer;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, Liberation Sans, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", Segoe UI Symbol, "Noto Color Emoji";
+}
+#benefits .button-container .button:hover {
+  background-color: #c21479;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2509803922);
+}
+#benefits .button-container p.guarantee {
+  margin: 5px 0 0;
+  text-align: center;
+  font-size: 15px;
+  font-weight: 700;
+  color: #28a745;
+}
+#benefits .button-container p.guarantee .checkmark {
+  display: inline-block;
+  transform: rotate(45deg);
+  height: 14px;
+  width: 8px;
+  border-bottom: 3px solid #28a745;
+  border-right: 3px solid #28a745;
+  margin-right: 5px;
+}
+
+#ingredients {
+  font-family: Muli, helvetica, verdana, arial, sans-serif;
+  color: #363636;
+}
+@media (max-width: 767px) {
+  #ingredients {
+    background-color: #f9f9f8;
+  }
+}
+#ingredients .mobile-img {
+  display: none;
+}
+@media (max-width: 767px) {
+  #ingredients .mobile-img {
+    display: block;
+  }
+}
+#ingredients .mobile-img img {
+  display: block;
+  width: 100%;
+}
+#ingredients .container {
+  margin: 0 auto;
+  padding: 0 15px;
+  box-sizing: border-box;
+}
+@media (min-width: 576px) {
+  #ingredients .container {
+    max-width: 576px;
+  }
+}
+@media (min-width: 768px) {
+  #ingredients .container {
+    max-width: 768px;
+  }
+}
+@media (min-width: 992px) {
+  #ingredients .container {
+    max-width: 992px;
+  }
+}
+@media (min-width: 1200px) {
+  #ingredients .container {
+    max-width: 1200px;
+  }
+}
+#ingredients .container .ingredients-container {
+  display: flex;
+}
+@media (max-width: 767px) {
+  #ingredients .container .ingredients-container {
+    flex-direction: column-reverse;
+  }
+}
+#ingredients .container .ingredients-container .left, #ingredients .container .ingredients-container .right {
+  flex: 0 0 50%;
+}
+#ingredients .container .ingredients-container .left {
+  background-color: #f9f9f8;
+}
+#ingredients .container .ingredients-container .left .content {
+  padding: 35px 30px;
+}
+@media (max-width: 991px) {
+  #ingredients .container .ingredients-container .left .content {
+    padding: 35px 15px;
+  }
+}
+#ingredients .container .ingredients-container .left .content h2 {
+  margin: 0 0 30px;
+  font-size: 27px;
+  text-align: center;
+}
+#ingredients .container .ingredients-container .left .content .item {
+  display: flex;
+  width: 100%;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+  margin-bottom: 20px;
+}
+#ingredients .container .ingredients-container .left .content .item img {
+  width: 100px;
+  height: 100px;
+}
+@media (max-width: 991px) {
+  #ingredients .container .ingredients-container .left .content .item img {
+    width: 75px;
+    height: 75px;
+  }
+}
+#ingredients .container .ingredients-container .left .content .item h3 {
+  margin: 0 0 5px;
+  font-size: 24px;
+}
+#ingredients .container .ingredients-container .left .content .item p {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.5;
+}
+#ingredients .container .ingredients-container .left .content .button-container {
+  margin: 35px 0 0;
+  text-align: center;
+}
+#ingredients .container .ingredients-container .left .content .button-container .button {
+  display: inline-block;
+  padding: 25px 55px;
+  border-radius: 40px;
+  font-size: 27px;
+  font-weight: 700;
+  text-align: center;
+  color: #fff;
+  background-color: #e2188d;
+  box-shadow: 0 0 16px rgba(0, 0, 0, 0.1019607843);
+  transition: background-color 0.15s ease-in-out;
+  cursor: pointer;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, Liberation Sans, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", Segoe UI Symbol, "Noto Color Emoji";
+}
+#ingredients .container .ingredients-container .left .content .button-container .button:hover {
+  background-color: #c21479;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2509803922);
+}
+@media (max-width: 991px) {
+  #ingredients .container .ingredients-container .left .content .button-container .button {
+    display: block;
+    padding: 25px 0;
+  }
+}
+@media (max-width: 767px) {
+  #ingredients .container .ingredients-container .left .content .button-container .button {
+    display: inline-block;
+    padding: 25px 55px;
+  }
+}
+#ingredients .container .ingredients-container .left .content .button-container p.guarantee {
+  margin: 5px 0 0;
+  text-align: center;
+  font-size: 15px;
+  font-weight: 700;
+  color: #28a745;
+}
+#ingredients .container .ingredients-container .left .content .button-container p.guarantee .checkmark {
+  display: inline-block;
+  transform: rotate(45deg);
+  height: 14px;
+  width: 8px;
+  border-bottom: 3px solid #28a745;
+  border-right: 3px solid #28a745;
+  margin-right: 5px;
+}
+#ingredients .container .ingredients-container .right {
+  background: url(https://dist1.skinnyfitdetox.com/images/new-lander/Collagen-Types_Desktop_02.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+}
+@media (max-width: 767px) {
+  #ingredients .container .ingredients-container .right {
+    display: none;
+  }
+}
+
+#features {
+  font-family: Muli, helvetica, verdana, arial, sans-serif;
+  padding: 35px 0;
+  color: #363636;
+}
+#features .container {
+  margin: 0 auto;
+  padding: 0 15px;
+  box-sizing: border-box;
+}
+@media (min-width: 576px) {
+  #features .container {
+    max-width: 576px;
+  }
+}
+@media (min-width: 768px) {
+  #features .container {
+    max-width: 768px;
+  }
+}
+@media (min-width: 992px) {
+  #features .container {
+    max-width: 992px;
+  }
+}
+@media (min-width: 1200px) {
+  #features .container {
+    max-width: 1200px;
+  }
+}
+#features .container .headlines {
+  padding: 0 0 35px;
+}
+#features .container .headlines h2 {
+  margin: 0 0 15px;
+  font-size: 32px;
+  font-weight: 700;
+  color: #1e204a;
+  text-align: center;
+}
+#features .container .headlines h3 {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
+}
+#features .container .ingredients-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  row-gap: 20px;
+}
+@media (max-width: 767px) {
+  #features .container .ingredients-container {
+    justify-content: space-between;
+  }
+}
+@media (max-width: 767px) {
+  #features .container .ingredients-container .ingredient {
+    flex: 0 0 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+#features .container .ingredients-container .ingredient img {
+  display: block;
+  width: 100px;
+  margin: 0 0 10px;
+}
+#features .container .ingredients-container .ingredient h3 {
+  margin: 0;
+  font-size: 20px;
+}
+#features .container .button-container {
+  margin: 30px 0 0;
+  text-align: center;
+}
+#features .container .button-container .button {
+  display: inline-block;
+  padding: 25px 55px;
+  border-radius: 40px;
+  font-size: 27px;
+  font-weight: 700;
+  text-align: center;
+  color: #fff;
+  background-color: #e2188d;
+  box-shadow: 0 0 16px rgba(0, 0, 0, 0.1019607843);
+  transition: background-color 0.15s ease-in-out;
+  cursor: pointer;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, Liberation Sans, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", Segoe UI Symbol, "Noto Color Emoji";
+}
+#features .container .button-container .button:hover {
+  background-color: #c21479;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2509803922);
+}
+#features .container .button-container .button.border {
+  margin: 20px 0 0;
+  background-color: #fff;
+  color: #e2188d;
+  border: 3px solid #e2188d;
+}
+#features .container .button-container p.guarantee {
+  margin: 5px 0 0;
+  text-align: center;
+  font-size: 15px;
+  font-weight: 700;
+  color: #28a745;
+}
+#features .container .button-container p.guarantee .checkmark {
+  display: inline-block;
+  transform: rotate(45deg);
+  height: 14px;
+  width: 8px;
+  border-bottom: 3px solid #28a745;
+  border-right: 3px solid #28a745;
+  margin-right: 5px;
+}
+#features .label-modal {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(54, 54, 54, 0.5);
+  z-index: 101;
+}
+#features .label-modal .modal-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 500px;
+  height: 500px;
+  background: #fff;
+  border-radius: 5px;
+}
+#features .label-modal .modal-box .close {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20px;
+  height: 20px;
+  margin: 10px 10px 0 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 30px;
+  cursor: pointer;
+}
+#features .label-modal .modal-box img {
+  display: block;
+  height: 400px;
+}
+
+#process {
+  font-family: Muli, helvetica, verdana, arial, sans-serif;
+  padding: 35px 0;
+  color: #363636;
+  background: #f9f9f8;
+}
+#process .container {
+  margin: 0 auto;
+  padding: 0 15px;
+  box-sizing: border-box;
+}
+@media (min-width: 576px) {
+  #process .container {
+    max-width: 576px;
+  }
+}
+@media (min-width: 768px) {
+  #process .container {
+    max-width: 768px;
+  }
+}
+@media (min-width: 992px) {
+  #process .container {
+    max-width: 992px;
+  }
+}
+@media (min-width: 1200px) {
+  #process .container {
+    max-width: 1200px;
+  }
+}
+#process .container .headlines {
+  padding: 0 0 35px;
+}
+#process .container .headlines h2 {
+  margin: 0 0 15px;
+  font-size: 32px;
+  font-weight: 700;
+  color: #1e204a;
+  text-align: center;
+}
+#process .container .headlines h3 {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
+}
+#process .container .steps-container {
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 767px) {
+  #process .container .steps-container {
+    flex-direction: column;
+  }
+}
+#process .container .steps-container .step {
+  width: 375px;
+  text-align: center;
+}
+@media (max-width: 1199px) {
+  #process .container .steps-container .step {
+    width: 300px;
+  }
+}
+@media (max-width: 991px) {
+  #process .container .steps-container .step {
+    width: 215px;
+  }
+}
+@media (max-width: 767px) {
+  #process .container .steps-container .step {
+    width: 100%;
+    margin: 0 0 30px;
+  }
+}
+#process .container .steps-container .step img {
+  display: block;
+  width: 250px;
+  margin: 0 auto 10px;
+}
+@media (max-width: 991px) {
+  #process .container .steps-container .step img {
+    width: 215px;
+  }
+}
+@media (max-width: 767px) {
+  #process .container .steps-container .step img {
+    width: 250px;
+  }
+}
+#process .container .steps-container .step h3 {
+  margin: 0 0 5px;
+  font-size: 28px;
+}
+#process .container .steps-container .step p {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.5;
+}
+#process .container .button-container {
+  margin: 30px 0 0;
+  text-align: center;
+}
+#process .container .button-container .button {
+  display: inline-block;
+  padding: 25px 55px;
+  border-radius: 40px;
+  font-size: 27px;
+  font-weight: 700;
+  text-align: center;
+  color: #fff;
+  background-color: #e2188d;
+  box-shadow: 0 0 16px rgba(0, 0, 0, 0.1019607843);
+  transition: background-color 0.15s ease-in-out;
+  cursor: pointer;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, Liberation Sans, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", Segoe UI Symbol, "Noto Color Emoji";
+}
+#process .container .button-container .button:hover {
+  background-color: #c21479;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2509803922);
+}
+#process .container .button-container p.guarantee {
+  margin: 5px 0 0;
+  text-align: center;
+  font-size: 15px;
+  font-weight: 700;
+  color: #28a745;
+}
+#process .container .button-container p.guarantee .checkmark {
+  display: inline-block;
+  transform: rotate(45deg);
+  height: 14px;
+  width: 8px;
+  border-bottom: 3px solid #28a745;
+  border-right: 3px solid #28a745;
+  margin-right: 5px;
+}
+
+#pricing-table {
+  font-family: Muli, helvetica, verdana, arial, sans-serif;
+  padding: 35px 0;
+  color: #363636;
+}
+#pricing-table .container {
+  margin: 0 auto;
+  padding: 0 15px;
+  box-sizing: border-box;
+}
+@media (min-width: 576px) {
+  #pricing-table .container {
+    max-width: 576px;
+  }
+}
+@media (min-width: 768px) {
+  #pricing-table .container {
+    max-width: 768px;
+  }
+}
+@media (min-width: 992px) {
+  #pricing-table .container {
+    max-width: 992px;
+  }
+}
+@media (min-width: 1200px) {
+  #pricing-table .container {
+    max-width: 1200px;
+  }
+}
+#pricing-table .headlines h2 {
+  margin: 0;
+  font-size: 27px;
+  font-weight: 700;
+  color: #1e204a;
+  text-align: center;
+}
+#pricing-table .pricing-table {
+  display: flex;
+  justify-content: center;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+  margin: 80px 0 20px;
+}
+@media (max-width: 767px) {
+  #pricing-table .pricing-table {
+    flex-direction: column;
+  }
+}
+#pricing-table .pricing-table .option {
+  position: relative;
+  z-index: 0;
+  width: 350px;
+  padding-bottom: 10px;
+  border: 2px solid #ccd6d6;
+  border-radius: 5px;
+}
+@media (max-width: 767px) {
+  #pricing-table .pricing-table .option {
+    width: 100%;
+  }
+  #pricing-table .pricing-table .option:last-of-type {
+    margin-top: 75px;
+  }
+}
+#pricing-table .pricing-table .option .best-value-tag {
+  position: absolute;
+  top: -60px;
+  z-index: -1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: #e2188d;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+#pricing-table .pricing-table .option .best-value-tag p {
+  margin: 0;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 65px;
+  color: #fff;
+  text-align: center;
+}
+#pricing-table .pricing-table .option .title {
+  padding: 10px 20px;
+  background-color: #f9f9f8;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  text-align: center;
+}
+#pricing-table .pricing-table .option .title p {
+  margin: 0;
+  font-size: 22px;
+  font-weight: 500;
+}
+#pricing-table .pricing-table .option .title h4 {
+  margin: 5px 0;
+  font-size: 36px;
+  font-weight: 700;
+  color: #e2188d;
+}
+#pricing-table .pricing-table .option .title h3 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 300;
+}
+#pricing-table .pricing-table .option .product-img {
+  display: block;
+  width: 315px;
+  margin: 0 auto;
+}
+@media (max-width: 767px) {
+  #pricing-table .pricing-table .option .product-img {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+#pricing-table .pricing-table .option .star-rating {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -moz-column-gap: 5px;
+       column-gap: 5px;
+}
+#pricing-table .pricing-table .option .star-rating img {
+  display: block;
+  width: 120px;
+}
+#pricing-table .pricing-table .option .star-rating p {
+  margin: 0;
+  font-size: 15px;
+  font-weight: 300;
+}
+#pricing-table .pricing-table .option .pricing {
+  text-align: center;
+}
+#pricing-table .pricing-table .option .pricing p.msrp {
+  margin: 10px 0 0;
+  font-size: 14px;
+}
+#pricing-table .pricing-table .option .pricing p.msrp span {
+  text-decoration: line-through;
+}
+#pricing-table .pricing-table .option .pricing p.price {
+  margin: 5px 0 0;
+  font-size: 14px;
+}
+#pricing-table .pricing-table .option .pricing p.price span {
+  font-weight: 700;
+}
+#pricing-table .pricing-table .option .pricing .free-items p {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 700;
+  color: #28a745;
+}
+#pricing-table .pricing-table .option .button-container {
+  margin: 30px 0 0;
+  text-align: center;
+}
+#pricing-table .pricing-table .option .button-container .button {
+  display: block;
+  width: 290px;
+  margin: 20px auto 0;
+  padding: 18px 0;
+  border-radius: 40px;
+  font-size: 20px;
+  font-weight: 700;
+  text-align: center;
+  color: #fff;
+  background-color: #e2188d;
+  box-shadow: 0 0 16px rgba(0, 0, 0, 0.1019607843);
+  transition: background-color 0.15s ease-in-out;
+  cursor: pointer;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, Liberation Sans, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", Segoe UI Symbol, "Noto Color Emoji";
+}
+#pricing-table .pricing-table .option .button-container .button:hover {
+  background-color: #c21479;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2509803922);
+}
+#pricing-table .pricing-table .option .button-container .button.border {
+  margin: 15px auto 0;
+  padding: 15px 0;
+  background-color: #fff;
+  color: #e2188d;
+  border: 3px solid #e2188d;
+}
+#pricing-table .pricing-table .option .button-container p {
+  margin: 5px 0 0;
+  text-align: center;
+  font-size: 14px;
+}
+#pricing-table .pricing-table .option .button-container p .checkmark {
+  display: inline-block;
+  transform: rotate(45deg);
+  height: 10px;
+  width: 4px;
+  margin: 0 5px;
+  border-bottom: 3px solid #28a745;
+  border-right: 3px solid #28a745;
+}
+#pricing-table .bottom-copy {
+  text-align: center;
+}
+#pricing-table .bottom-copy p {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 300;
+}
+#pricing-table .bottom-copy p:first-child {
+  margin: 0 0 10px;
+  font-weight: 600;
+}
+#pricing-table .bottom-copy p a {
+  text-decoration: none;
+  color: #363636;
+  font-weight: 400;
+}
+
+#as-seen-in .as-seen-in-container {
+  background: #1e204a;
+  padding: 50px 0;
+}
+#as-seen-in .as-seen-in-container img {
+  display: block;
+  width: 992px;
+  margin: 0 auto;
+}
+@media (max-width: 991px) {
+  #as-seen-in .as-seen-in-container img {
+    width: 768px;
+  }
+}
+@media (max-width: 767px) {
+  #as-seen-in .as-seen-in-container img {
+    width: 100%;
+  }
+}
+
+#faq {
+  font-family: Muli, helvetica, verdana, arial, sans-serif;
+  padding: 35px 0;
+  color: #363636;
+}
+#faq .container {
+  margin: 0 auto;
+  padding: 0 15px;
+  box-sizing: border-box;
+}
+@media (min-width: 576px) {
+  #faq .container {
+    max-width: 576px;
+  }
+}
+@media (min-width: 768px) {
+  #faq .container {
+    max-width: 768px;
+  }
+}
+@media (min-width: 992px) {
+  #faq .container {
+    max-width: 992px;
+  }
+}
+@media (min-width: 1200px) {
+  #faq .container {
+    max-width: 1200px;
+  }
+}
+#faq .headlines {
+  padding: 0 0 35px;
+}
+#faq .headlines h2 {
+  margin: 0 0 15px;
+  font-size: 32px;
+  font-weight: 700;
+  color: #1e204a;
+  text-align: center;
+}
+#faq .accordion .item {
+  padding: 15px 0;
+  border-bottom: 2px solid #ccd6d6;
+  text-align: left;
+}
+#faq .accordion .item.active p {
+  display: block;
+}
+#faq .accordion .item.active .minus {
+  display: block;
+}
+#faq .accordion .item.active .plus {
+  display: none;
+}
+#faq .accordion .item h3 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+  margin: 0;
+  font-size: 1.1em;
+  font-weight: 700;
+  line-height: initial;
+  color: #363636;
+  cursor: pointer;
+}
+#faq .accordion .item h3 .plus, #faq .accordion .item h3 .minus {
+  font-size: 32px;
+}
+#faq .accordion .item h3 .minus {
+  display: none;
+}
+#faq .accordion .item p {
+  display: none;
+  margin: 10px 0 0;
+  font-size: 1em;
+  font-weight: 300;
+  line-height: 1.5;
+  color: #363636;
+}
+#faq .button-container {
+  margin: 35px 0 0;
+  text-align: center;
+}
+#faq .button-container .button {
+  display: inline-block;
+  padding: 25px 55px;
+  border-radius: 40px;
+  font-size: 27px;
+  font-weight: 700;
+  text-align: center;
+  color: #fff;
+  background-color: #e2188d;
+  box-shadow: 0 0 16px rgba(0, 0, 0, 0.1019607843);
+  transition: background-color 0.15s ease-in-out;
+  cursor: pointer;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, Liberation Sans, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", Segoe UI Symbol, "Noto Color Emoji";
+}
+#faq .button-container .button:hover {
+  background-color: #c21479;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2509803922);
+}
+#faq .button-container p.guarantee {
+  margin: 5px 0 0;
+  text-align: center;
+  font-size: 15px;
+  font-weight: 700;
+  color: #28a745;
+}
+#faq .button-container p.guarantee .checkmark {
+  display: inline-block;
+  transform: rotate(45deg);
+  height: 14px;
+  width: 8px;
+  border-bottom: 3px solid #28a745;
+  border-right: 3px solid #28a745;
+  margin-right: 5px;
+}
+
+#footer {
+  font-family: Muli, helvetica, verdana, arial, sans-serif;
+  padding: 35px 0 0;
+  color: #363636;
+  background: #f9f9f8;
+}
+#footer .container {
+  margin: 0 auto;
+  padding: 0 15px;
+  box-sizing: border-box;
+}
+@media (min-width: 576px) {
+  #footer .container {
+    max-width: 576px;
+  }
+}
+@media (min-width: 768px) {
+  #footer .container {
+    max-width: 768px;
+  }
+}
+@media (min-width: 992px) {
+  #footer .container {
+    max-width: 992px;
+  }
+}
+@media (min-width: 1200px) {
+  #footer .container {
+    max-width: 1200px;
+  }
+}
+#footer .footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  -moz-column-gap: 70px;
+       column-gap: 70px;
+}
+@media (max-width: 767px) {
+  #footer .footer-container {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+#footer .footer-container .logo img {
+  display: block;
+  width: 150px;
+}
+#footer .footer-container .copy small {
+  display: block;
+  font-size: 14px;
+  line-height: 21px;
+}
+@media (max-width: 767px) {
+  #footer .footer-container .copy small {
+    margin: 15px 0 0;
+    font-size: 12px;
+  }
+}
+#footer .footer-container .copy ul {
+  display: flex;
+  -moz-column-gap: 60px;
+       column-gap: 60px;
+  margin: 25px 0;
+  padding: 0;
+  list-style: none;
+}
+@media (max-width: 767px) {
+  #footer .footer-container .copy ul {
+    justify-content: center;
+  }
+}
+#footer .footer-container .copy ul li {
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+}
+#footer .copyright {
+  background-color: #1e204a;
+}
+#footer .copyright p {
+  margin: 0;
+  font-size: 15px;
+  line-height: 40px;
+  color: #fff;
+  text-align: center;
+}
+@media (max-width: 767px) {
+  #footer .copyright p {
+    font-size: 12px;
+  }
+}
+#footer .modal {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(54, 54, 54, 0.5);
+  z-index: 101;
+}
+#footer .modal .modal-box {
+  display: block;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 500px;
+  height: 500px;
+  background: #fff;
+  border-radius: 5px;
+  padding: 15px;
+  box-sizing: border-box;
+  overflow: scroll;
+}
+#footer .modal .modal-box h4 {
+  font-size: 20px;
+}
+#footer .modal .modal-box .close {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20px;
+  height: 20px;
+  margin: 10px 10px 0 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 30px;
+  cursor: pointer;
 }/*# sourceMappingURL=style.css.map */

@@ -120,12 +120,9 @@ body {
   width: 8px;
   border-bottom: 3px solid #28a745;
   border-right: 3px solid #28a745;
-  position: relative;
-  top: 2px;
-  margin-right: 2px;
+  margin-right: 5px;
 }
-
-.label-modal {
+#features .label-modal {
   display: none;
   align-items: center;
   justify-content: center;
@@ -137,7 +134,7 @@ body {
   background: rgba(54, 54, 54, 0.5);
   z-index: 101;
 }
-.label-modal .modal-box {
+#features .label-modal .modal-box {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -147,7 +144,7 @@ body {
   background: #fff;
   border-radius: 5px;
 }
-.label-modal .modal-box .close {
+#features .label-modal .modal-box .close {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -160,7 +157,7 @@ body {
   font-size: 30px;
   cursor: pointer;
 }
-.label-modal .modal-box img {
+#features .label-modal .modal-box img {
   display: block;
   height: 400px;
 }/*# sourceMappingURL=style.css.map */
