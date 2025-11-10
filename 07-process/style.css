@@ -44,12 +44,23 @@ body {
   font-weight: 700;
   color: #1e204a;
   text-align: center;
+  font-family: Muli, helvetica, verdana, arial, sans-serif;
+  font-style: initial;
+  letter-spacing: initial;
+  line-height: initial;
+  word-wrap: initial;
 }
 #process .container .headlines h3 {
   margin: 0;
   font-size: 20px;
   font-weight: 600;
   text-align: center;
+  font-family: Muli, helvetica, verdana, arial, sans-serif;
+  font-style: initial;
+  letter-spacing: initial;
+  line-height: initial;
+  word-wrap: initial;
+  color: #363636;
 }
 #process .container .steps-container {
   display: flex;
@@ -98,22 +109,39 @@ body {
 #process .container .steps-container .step h3 {
   margin: 0 0 5px;
   font-size: 28px;
+  font-family: Muli, helvetica, verdana, arial, sans-serif;
+  font-style: initial;
+  letter-spacing: initial;
+  line-height: initial;
+  word-wrap: initial;
+  text-align: left;
+  color: #363636;
 }
 #process .container .steps-container .step p {
   margin: 0;
   font-size: 16px;
   line-height: 1.5;
+  font-family: Muli, helvetica, verdana, arial, sans-serif;
+  font-style: initial;
+  letter-spacing: initial;
+  word-wrap: initial;
+  text-align: left;
+  color: #363636;
 }
 #process .container .button-container {
   margin: 30px 0 0;
   text-align: center;
 }
-#process .container .button-container .button {
+#process .container .button-container .my-button {
   display: inline-block;
   padding: 25px 55px;
   border-radius: 40px;
   font-size: 27px;
   font-weight: 700;
+  font-style: initial;
+  letter-spacing: initial;
+  line-height: initial;
+  word-wrap: initial;
   text-align: center;
   color: #fff;
   background-color: #e2188d;
@@ -122,7 +150,7 @@ body {
   cursor: pointer;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, Liberation Sans, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", Segoe UI Symbol, "Noto Color Emoji";
 }
-#process .container .button-container .button:hover {
+#process .container .button-container .my-button:hover {
   background-color: #c21479;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2509803922);
 }
@@ -132,6 +160,11 @@ body {
   font-size: 15px;
   font-weight: 700;
   color: #28a745;
+  font-family: Muli, helvetica, verdana, arial, sans-serif;
+  font-style: initial;
+  letter-spacing: initial;
+  line-height: initial;
+  word-wrap: initial;
 }
 #process .container .button-container p.guarantee .checkmark {
   display: inline-block;

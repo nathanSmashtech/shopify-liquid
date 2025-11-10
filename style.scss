@@ -22,6 +22,11 @@ body {
         font-size: 18px;
         font-weight: 700;
         color: #ffc107;
+        font-family: Muli, helvetica, verdana, arial, sans-serif;
+        font-style: initial;
+        letter-spacing: initial;
+        line-height: initial;
+        word-wrap: initial;
 
         @media (max-width: 767px) {
             font-size: 16px;
@@ -124,6 +129,7 @@ body {
 
             @media (max-width: 767px) {
                 display: block;
+                padding: 0 0 35px;
             }
         }
         .hero-testimonial {
@@ -141,18 +147,34 @@ body {
                 margin: 0;
                 font-size: 16px;
                 font-weight: 700;
+                font-family: Muli, helvetica, verdana, arial, sans-serif;
+                font-style: initial;
+                letter-spacing: initial;
+                line-height: initial;
+                word-wrap: initial;
+                text-align: left;
             }
             p.name {
                 margin: 5px 0 0;
                 font-size: 16px;
                 font-weight: 300;
                 font-style: italic;
+                font-family: Muli, helvetica, verdana, arial, sans-serif;
+                letter-spacing: initial;
+                line-height: initial;
+                word-wrap: initial;
+                text-align: left;
             }
             p.lost {
                 margin: 5px 0 0;
                 font-size: 16px;
                 font-weight: 300;
                 font-style: italic;
+                font-family: Muli, helvetica, verdana, arial, sans-serif;
+                letter-spacing: initial;
+                line-height: initial;
+                word-wrap: initial;
+                text-align: left;
             }
         }
         h1 {
@@ -160,6 +182,12 @@ body {
             font-size: 48px;
             font-weight: 700;
             color: #1e204a;
+            font-family: Muli, helvetica, verdana, arial, sans-serif;
+            font-style: initial;
+            letter-spacing: initial;
+            line-height: initial;
+            word-wrap: initial;
+            text-align: left;
 
             @media (max-width: 1199px) {
                 font-size: 42px;
@@ -187,6 +215,12 @@ body {
                 margin: 0;
                 font-size: 15px;
                 font-weight: 300;
+                font-family: Muli, helvetica, verdana, arial, sans-serif;
+                font-style: initial;
+                letter-spacing: initial;
+                line-height: initial;
+                word-wrap: initial;
+                text-align: left;
             }
 
             @media (max-width: 767px) {
@@ -197,13 +231,17 @@ body {
         .button-container {
             margin: 15px 0 0;
 
-            .button {
+            .my-button {
                 width: 100%;
                 display: inline-block;
                 padding: 25px 0;
                 border-radius: 40px;
                 font-size: 27px;
                 font-weight: 700;
+                font-style: initial;
+                letter-spacing: initial;
+                line-height: initial;
+                word-wrap: initial;
                 text-align: center;
                 color: #fff;
                 background-color: #e2188d;
@@ -222,6 +260,11 @@ body {
                 text-align: center;
                 font-size: 15px;
                 font-weight: 700;
+                font-family: Muli, helvetica, verdana, arial, sans-serif;
+                font-style: initial;
+                letter-spacing: initial;
+                line-height: initial;
+                word-wrap: initial;
                 color: #28a745;
 
                 .checkmark {
@@ -239,6 +282,12 @@ body {
             margin: 15px 0 0;
             font-size: 24px;
             font-weight: 600;
+            font-family: Muli, helvetica, verdana, arial, sans-serif;
+            font-style: initial;
+            letter-spacing: initial;
+            line-height: initial;
+            word-wrap: initial;
+            text-align: left;
 
             @media (max-width: 991px) {
                 font-size: 22px;
@@ -249,6 +298,11 @@ body {
             font-size: 16px;
             font-weight: 300;
             line-height: 1.5;
+            font-family: Muli, helvetica, verdana, arial, sans-serif;
+            font-style: initial;
+            letter-spacing: initial;
+            word-wrap: initial;
+            text-align: left;
         }
         .benefits {
             display: flex;
@@ -285,6 +339,12 @@ body {
                     margin: 0;
                     font-size: 16px;
                     font-weight: 700;
+                    font-family: Muli, helvetica, verdana, arial, sans-serif;
+                    font-style: initial;
+                    letter-spacing: initial;
+                    line-height: initial;
+                    word-wrap: initial;
+                    text-align: left;
 
                     @media (max-width: 399px) {
                         font-size: 12px;

@@ -21,6 +21,11 @@ body {
   font-size: 18px;
   font-weight: 700;
   color: #ffc107;
+  font-family: Muli, helvetica, verdana, arial, sans-serif;
+  font-style: initial;
+  letter-spacing: initial;
+  line-height: initial;
+  word-wrap: initial;
 }
 @media (max-width: 767px) {
   #top-bar p {
@@ -144,6 +149,7 @@ body {
 @media (max-width: 767px) {
   #hero .container .mobile-hero-container {
     display: block;
+    padding: 0 0 35px;
   }
 }
 #hero .container .hero-testimonial {
@@ -162,24 +168,46 @@ body {
   margin: 0;
   font-size: 16px;
   font-weight: 700;
+  font-family: Muli, helvetica, verdana, arial, sans-serif;
+  font-style: initial;
+  letter-spacing: initial;
+  line-height: initial;
+  word-wrap: initial;
+  text-align: left;
 }
 #hero .container .hero-testimonial p.name {
   margin: 5px 0 0;
   font-size: 16px;
   font-weight: 300;
   font-style: italic;
+  font-family: Muli, helvetica, verdana, arial, sans-serif;
+  letter-spacing: initial;
+  line-height: initial;
+  word-wrap: initial;
+  text-align: left;
 }
 #hero .container .hero-testimonial p.lost {
   margin: 5px 0 0;
   font-size: 16px;
   font-weight: 300;
   font-style: italic;
+  font-family: Muli, helvetica, verdana, arial, sans-serif;
+  letter-spacing: initial;
+  line-height: initial;
+  word-wrap: initial;
+  text-align: left;
 }
 #hero .container h1 {
   margin: 0;
   font-size: 48px;
   font-weight: 700;
   color: #1e204a;
+  font-family: Muli, helvetica, verdana, arial, sans-serif;
+  font-style: initial;
+  letter-spacing: initial;
+  line-height: initial;
+  word-wrap: initial;
+  text-align: left;
 }
 @media (max-width: 1199px) {
   #hero .container h1 {
@@ -213,6 +241,12 @@ body {
   margin: 0;
   font-size: 15px;
   font-weight: 300;
+  font-family: Muli, helvetica, verdana, arial, sans-serif;
+  font-style: initial;
+  letter-spacing: initial;
+  line-height: initial;
+  word-wrap: initial;
+  text-align: left;
 }
 @media (max-width: 767px) {
   #hero .container .star-rating {
@@ -223,13 +257,17 @@ body {
 #hero .container .button-container {
   margin: 15px 0 0;
 }
-#hero .container .button-container .button {
+#hero .container .button-container .my-button {
   width: 100%;
   display: inline-block;
   padding: 25px 0;
   border-radius: 40px;
   font-size: 27px;
   font-weight: 700;
+  font-style: initial;
+  letter-spacing: initial;
+  line-height: initial;
+  word-wrap: initial;
   text-align: center;
   color: #fff;
   background-color: #e2188d;
@@ -238,7 +276,7 @@ body {
   cursor: pointer;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, Liberation Sans, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", Segoe UI Symbol, "Noto Color Emoji";
 }
-#hero .container .button-container .button:hover {
+#hero .container .button-container .my-button:hover {
   background-color: #c21479;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2509803922);
 }
@@ -247,6 +285,11 @@ body {
   text-align: center;
   font-size: 15px;
   font-weight: 700;
+  font-family: Muli, helvetica, verdana, arial, sans-serif;
+  font-style: initial;
+  letter-spacing: initial;
+  line-height: initial;
+  word-wrap: initial;
   color: #28a745;
 }
 #hero .container .button-container p.guarantee .checkmark {
@@ -262,6 +305,12 @@ body {
   margin: 15px 0 0;
   font-size: 24px;
   font-weight: 600;
+  font-family: Muli, helvetica, verdana, arial, sans-serif;
+  font-style: initial;
+  letter-spacing: initial;
+  line-height: initial;
+  word-wrap: initial;
+  text-align: left;
 }
 @media (max-width: 991px) {
   #hero .container h2 {
@@ -273,6 +322,11 @@ body {
   font-size: 16px;
   font-weight: 300;
   line-height: 1.5;
+  font-family: Muli, helvetica, verdana, arial, sans-serif;
+  font-style: initial;
+  letter-spacing: initial;
+  word-wrap: initial;
+  text-align: left;
 }
 #hero .container .benefits {
   display: flex;
@@ -315,6 +369,12 @@ body {
   margin: 0;
   font-size: 16px;
   font-weight: 700;
+  font-family: Muli, helvetica, verdana, arial, sans-serif;
+  font-style: initial;
+  letter-spacing: initial;
+  line-height: initial;
+  word-wrap: initial;
+  text-align: left;
 }
 @media (max-width: 399px) {
   #hero .container .benefits .item p {

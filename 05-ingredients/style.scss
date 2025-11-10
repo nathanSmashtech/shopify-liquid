@@ -66,7 +66,14 @@ body {
                     h2 {
                         margin: 0 0 30px;
                         font-size: 27px;
+                        color: #1e204a;
                         text-align: center;
+                        font-family: Muli, helvetica, verdana, arial, sans-serif;
+                        font-style: initial;
+                        letter-spacing: initial;
+                        line-height: initial;
+                        word-wrap: initial;
+                        font-weight: 700;
                     }
                     .item {
                         display: flex;
@@ -86,23 +93,41 @@ body {
                         h3 {
                             margin: 0 0 5px;
                             font-size: 24px;
+                            font-family: Muli, helvetica, verdana, arial, sans-serif;
+                            font-style: initial;
+                            letter-spacing: initial;
+                            line-height: initial;
+                            word-wrap: initial;
+                            text-align: left;
+                            color: #363636;
+                            font-weight: 700;
                         }
                         p {
                             margin: 0;
                             font-size: 16px;
                             line-height: 1.5;
+                            font-family: Muli, helvetica, verdana, arial, sans-serif;
+                            font-style: initial;
+                            letter-spacing: initial;
+                            word-wrap: initial;
+                            text-align: left;
+                            color: #363636;
                         }
                     }
                     .button-container {
                         margin: 35px 0 0;
                         text-align: center;
 
-                        .button {
+                        .my-button {
                             display: inline-block;
                             padding: 25px 55px;
                             border-radius: 40px;
                             font-size: 27px;
                             font-weight: 700;
+                            font-style: initial;
+                            letter-spacing: initial;
+                            line-height: initial;
+                            word-wrap: initial;
                             text-align: center;
                             color: #fff;
                             background-color: #e2188d;
@@ -131,6 +156,11 @@ body {
                             font-size: 15px;
                             font-weight: 700;
                             color: #28a745;
+                            font-family: Muli, helvetica, verdana, arial, sans-serif;
+                            font-style: initial;
+                            letter-spacing: initial;
+                            line-height: initial;
+                            word-wrap: initial;
 
                             .checkmark {
                                 display: inline-block;
@@ -146,6 +176,7 @@ body {
                 }
             }
             .right {
+                display: block;
                 background: url(https://dist1.skinnyfitdetox.com/images/new-lander/Collagen-Types_Desktop_02.jpg);
                 background-repeat: no-repeat;
                 background-size: cover;

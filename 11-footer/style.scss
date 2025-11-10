@@ -50,10 +50,23 @@ body {
                 display: block;
                 font-size: 14px;
                 line-height: 21px;
+                font-family: Muli, helvetica, verdana, arial, sans-serif;
+                font-style: initial;
+                letter-spacing: initial;
+                word-wrap: initial;
+                text-align: left;
+                color: #363636;
 
                 @media (max-width: 767px) {
                     margin: 15px 0 0;
                     font-size: 12px;
+                    font-family: Muli, helvetica, verdana, arial, sans-serif;
+                    font-style: initial;
+                    letter-spacing: initial;
+                    line-height: initial;
+                    word-wrap: initial;
+                    text-align: left;
+                    color: #363636;
                 }
             }
             ul {
@@ -71,6 +84,13 @@ body {
                     font-size: 14px;
                     font-weight: 700;
                     cursor: pointer;
+                    font-family: Muli, helvetica, verdana, arial, sans-serif;
+                    font-style: initial;
+                    letter-spacing: initial;
+                    line-height: initial;
+                    word-wrap: initial;
+                    text-align: left;
+                    color: #363636;
                 }
             }
         }
@@ -84,6 +104,11 @@ body {
             line-height: 40px;
             color: #fff;
             text-align: center;
+            font-family: Muli, helvetica, verdana, arial, sans-serif;
+            font-style: initial;
+            letter-spacing: initial;
+            word-wrap: initial;
+            text-align: left;
 
             @media (max-width: 767px) {
                 font-size: 12px;
@@ -118,6 +143,13 @@ body {
 
             h4 {
                 font-size: 20px;
+                font-family: Muli, helvetica, verdana, arial, sans-serif;
+                font-style: initial;
+                letter-spacing: initial;
+                line-height: initial;
+                word-wrap: initial;
+                text-align: left;
+                color: #363636;
             }
 
             .close {
@@ -132,6 +164,13 @@ body {
                 right: 0;
                 font-size: 30px;
                 cursor: pointer;
+                font-family: Muli, helvetica, verdana, arial, sans-serif;
+                font-style: initial;
+                letter-spacing: initial;
+                line-height: initial;
+                word-wrap: initial;
+                text-align: left;
+                color: #363636;
             }
         }
     }
