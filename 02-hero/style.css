@@ -66,6 +66,7 @@ body {
   cursor: pointer;
 }
 #hero .container .desktop-hero-container .left .thumbs .alternate-images .alternate-image-wrapper img {
+  display: block;
   width: 87px;
 }
 @media (max-width: 1199px) {
@@ -114,6 +115,7 @@ body {
   margin: 15px 0 0;
 }
 #hero .container .hero-testimonial img {
+  display: block;
   width: 105px;
 }
 #hero .container .hero-testimonial p.quote {
@@ -164,6 +166,7 @@ body {
   margin: 15px 0 0;
 }
 #hero .container .star-rating img {
+  display: block;
   width: 140px;
 }
 #hero .container .star-rating p {
