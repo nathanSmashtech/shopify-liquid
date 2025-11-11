@@ -21,11 +21,6 @@ body {
   font-size: 18px;
   font-weight: 700;
   color: #ffc107;
-  font-family: Muli, helvetica, verdana, arial, sans-serif;
-  font-style: initial;
-  letter-spacing: initial;
-  line-height: initial;
-  word-wrap: initial;
 }
 @media (max-width: 767px) {
   #top-bar p {
@@ -168,46 +163,24 @@ body {
   margin: 0;
   font-size: 16px;
   font-weight: 700;
-  font-family: Muli, helvetica, verdana, arial, sans-serif;
-  font-style: initial;
-  letter-spacing: initial;
-  line-height: initial;
-  word-wrap: initial;
-  text-align: left;
 }
 #hero .container .hero-testimonial p.name {
   margin: 5px 0 0;
   font-size: 16px;
   font-weight: 300;
   font-style: italic;
-  font-family: Muli, helvetica, verdana, arial, sans-serif;
-  letter-spacing: initial;
-  line-height: initial;
-  word-wrap: initial;
-  text-align: left;
 }
 #hero .container .hero-testimonial p.lost {
   margin: 5px 0 0;
   font-size: 16px;
   font-weight: 300;
   font-style: italic;
-  font-family: Muli, helvetica, verdana, arial, sans-serif;
-  letter-spacing: initial;
-  line-height: initial;
-  word-wrap: initial;
-  text-align: left;
 }
 #hero .container h1 {
   margin: 0;
   font-size: 48px;
   font-weight: 700;
   color: #1e204a;
-  font-family: Muli, helvetica, verdana, arial, sans-serif;
-  font-style: initial;
-  letter-spacing: initial;
-  line-height: initial;
-  word-wrap: initial;
-  text-align: left;
 }
 @media (max-width: 1199px) {
   #hero .container h1 {
@@ -241,12 +214,6 @@ body {
   margin: 0;
   font-size: 15px;
   font-weight: 300;
-  font-family: Muli, helvetica, verdana, arial, sans-serif;
-  font-style: initial;
-  letter-spacing: initial;
-  line-height: initial;
-  word-wrap: initial;
-  text-align: left;
 }
 @media (max-width: 767px) {
   #hero .container .star-rating {
@@ -257,17 +224,13 @@ body {
 #hero .container .button-container {
   margin: 15px 0 0;
 }
-#hero .container .button-container .my-button {
+#hero .container .button-container .sf-button {
   width: 100%;
   display: inline-block;
   padding: 25px 0;
   border-radius: 40px;
   font-size: 27px;
   font-weight: 700;
-  font-style: initial;
-  letter-spacing: initial;
-  line-height: initial;
-  word-wrap: initial;
   text-align: center;
   color: #fff;
   background-color: #e2188d;
@@ -276,7 +239,7 @@ body {
   cursor: pointer;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, Liberation Sans, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", Segoe UI Symbol, "Noto Color Emoji";
 }
-#hero .container .button-container .my-button:hover {
+#hero .container .button-container .sf-button:hover {
   background-color: #c21479;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2509803922);
 }
@@ -285,11 +248,6 @@ body {
   text-align: center;
   font-size: 15px;
   font-weight: 700;
-  font-family: Muli, helvetica, verdana, arial, sans-serif;
-  font-style: initial;
-  letter-spacing: initial;
-  line-height: initial;
-  word-wrap: initial;
   color: #28a745;
 }
 #hero .container .button-container p.guarantee .checkmark {
@@ -305,12 +263,6 @@ body {
   margin: 15px 0 0;
   font-size: 24px;
   font-weight: 600;
-  font-family: Muli, helvetica, verdana, arial, sans-serif;
-  font-style: initial;
-  letter-spacing: initial;
-  line-height: initial;
-  word-wrap: initial;
-  text-align: left;
 }
 @media (max-width: 991px) {
   #hero .container h2 {
@@ -322,11 +274,6 @@ body {
   font-size: 16px;
   font-weight: 300;
   line-height: 1.5;
-  font-family: Muli, helvetica, verdana, arial, sans-serif;
-  font-style: initial;
-  letter-spacing: initial;
-  word-wrap: initial;
-  text-align: left;
 }
 #hero .container .benefits {
   display: flex;
@@ -369,12 +316,6 @@ body {
   margin: 0;
   font-size: 16px;
   font-weight: 700;
-  font-family: Muli, helvetica, verdana, arial, sans-serif;
-  font-style: initial;
-  letter-spacing: initial;
-  line-height: initial;
-  word-wrap: initial;
-  text-align: left;
 }
 @media (max-width: 399px) {
   #hero .container .benefits .item p {
@@ -1216,7 +1157,7 @@ body {
   margin: 30px 0 0;
   text-align: center;
 }
-#testimonials .button-container .button {
+#testimonials .button-container .sf-button {
   display: inline-block;
   padding: 25px 55px;
   border-radius: 40px;
@@ -1230,7 +1171,7 @@ body {
   cursor: pointer;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, Liberation Sans, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", Segoe UI Symbol, "Noto Color Emoji";
 }
-#testimonials .button-container .button:hover {
+#testimonials .button-container .sf-button:hover {
   background-color: #c21479;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2509803922);
 }
@@ -1361,7 +1302,7 @@ body {
   margin: 35px 0 0;
   text-align: center;
 }
-#benefits .button-container .button {
+#benefits .button-container .sf-button {
   display: inline-block;
   padding: 25px 55px;
   border-radius: 40px;
@@ -1375,7 +1316,7 @@ body {
   cursor: pointer;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, Liberation Sans, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", Segoe UI Symbol, "Noto Color Emoji";
 }
-#benefits .button-container .button:hover {
+#benefits .button-container .sf-button:hover {
   background-color: #c21479;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2509803922);
 }
@@ -1467,6 +1408,7 @@ body {
 #ingredients .container .ingredients-container .left .content h2 {
   margin: 0 0 30px;
   font-size: 27px;
+  color: #1e204a;
   text-align: center;
 }
 #ingredients .container .ingredients-container .left .content .item {
@@ -1499,7 +1441,7 @@ body {
   margin: 35px 0 0;
   text-align: center;
 }
-#ingredients .container .ingredients-container .left .content .button-container .button {
+#ingredients .container .ingredients-container .left .content .button-container .sf-button {
   display: inline-block;
   padding: 25px 55px;
   border-radius: 40px;
@@ -1513,18 +1455,18 @@ body {
   cursor: pointer;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, Liberation Sans, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", Segoe UI Symbol, "Noto Color Emoji";
 }
-#ingredients .container .ingredients-container .left .content .button-container .button:hover {
+#ingredients .container .ingredients-container .left .content .button-container .sf-button:hover {
   background-color: #c21479;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2509803922);
 }
 @media (max-width: 991px) {
-  #ingredients .container .ingredients-container .left .content .button-container .button {
+  #ingredients .container .ingredients-container .left .content .button-container .sf-button {
     display: block;
     padding: 25px 0;
   }
 }
 @media (max-width: 767px) {
-  #ingredients .container .ingredients-container .left .content .button-container .button {
+  #ingredients .container .ingredients-container .left .content .button-container .sf-button {
     display: inline-block;
     padding: 25px 55px;
   }
@@ -1546,6 +1488,7 @@ body {
   margin-right: 5px;
 }
 #ingredients .container .ingredients-container .right {
+  display: block;
   background: url(https://dist1.skinnyfitdetox.com/images/new-lander/Collagen-Types_Desktop_02.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -1635,7 +1578,7 @@ body {
   margin: 30px 0 0;
   text-align: center;
 }
-#features .container .button-container .button {
+#features .container .button-container .sf-button {
   display: inline-block;
   padding: 25px 55px;
   border-radius: 40px;
@@ -1649,11 +1592,11 @@ body {
   cursor: pointer;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, Liberation Sans, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", Segoe UI Symbol, "Noto Color Emoji";
 }
-#features .container .button-container .button:hover {
+#features .container .button-container .sf-button:hover {
   background-color: #c21479;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2509803922);
 }
-#features .container .button-container .button.border {
+#features .container .button-container .sf-button.border {
   margin: 20px 0 0;
   background-color: #fff;
   color: #e2188d;
@@ -1819,7 +1762,7 @@ body {
   margin: 30px 0 0;
   text-align: center;
 }
-#process .container .button-container .button {
+#process .container .button-container .sf-button {
   display: inline-block;
   padding: 25px 55px;
   border-radius: 40px;
@@ -1833,7 +1776,7 @@ body {
   cursor: pointer;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, Liberation Sans, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", Segoe UI Symbol, "Noto Color Emoji";
 }
-#process .container .button-container .button:hover {
+#process .container .button-container .sf-button:hover {
   background-color: #c21479;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2509803922);
 }
@@ -2016,7 +1959,7 @@ body {
   margin: 30px 0 0;
   text-align: center;
 }
-#pricing-table .pricing-table .option .button-container .button {
+#pricing-table .pricing-table .option .button-container .sf-button {
   display: block;
   width: 290px;
   margin: 20px auto 0;
@@ -2032,11 +1975,11 @@ body {
   cursor: pointer;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, Liberation Sans, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", Segoe UI Symbol, "Noto Color Emoji";
 }
-#pricing-table .pricing-table .option .button-container .button:hover {
+#pricing-table .pricing-table .option .button-container .sf-button:hover {
   background-color: #c21479;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2509803922);
 }
-#pricing-table .pricing-table .option .button-container .button.border {
+#pricing-table .pricing-table .option .button-container .sf-button.border {
   margin: 15px auto 0;
   padding: 15px 0;
   background-color: #fff;
@@ -2180,7 +2123,7 @@ body {
   margin: 35px 0 0;
   text-align: center;
 }
-#faq .button-container .button {
+#faq .button-container .sf-button {
   display: inline-block;
   padding: 25px 55px;
   border-radius: 40px;
@@ -2194,7 +2137,7 @@ body {
   cursor: pointer;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, Liberation Sans, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", Segoe UI Symbol, "Noto Color Emoji";
 }
-#faq .button-container .button:hover {
+#faq .button-container .sf-button:hover {
   background-color: #c21479;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2509803922);
 }

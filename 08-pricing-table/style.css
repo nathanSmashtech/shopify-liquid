@@ -8,6 +8,8 @@ body {
   font-family: Muli, helvetica, verdana, arial, sans-serif;
   padding: 35px 0;
   color: #363636;
+  letter-spacing: initial;
+  line-height: initial;
 }
 #pricing-table .container {
   margin: 0 auto;
@@ -40,11 +42,6 @@ body {
   font-weight: 700;
   color: #1e204a;
   text-align: center;
-  font-family: Muli, helvetica, verdana, arial, sans-serif;
-  font-style: initial;
-  letter-spacing: initial;
-  line-height: initial;
-  word-wrap: initial;
 }
 #pricing-table .pricing-table {
   display: flex;
@@ -93,12 +90,9 @@ body {
   line-height: 65px;
   color: #fff;
   text-align: center;
-  font-family: Muli, helvetica, verdana, arial, sans-serif;
-  font-style: initial;
-  letter-spacing: initial;
-  word-wrap: initial;
 }
 #pricing-table .pricing-table .option .title {
+  margin: 0;
   padding: 10px 20px;
   background-color: #f9f9f8;
   border-top-left-radius: 5px;
@@ -109,34 +103,17 @@ body {
   margin: 0;
   font-size: 22px;
   font-weight: 500;
-  font-family: Muli, helvetica, verdana, arial, sans-serif;
-  font-style: initial;
-  letter-spacing: initial;
-  line-height: initial;
-  word-wrap: initial;
-  color: #363636;
 }
 #pricing-table .pricing-table .option .title h4 {
   margin: 5px 0;
   font-size: 36px;
   font-weight: 700;
   color: #e2188d;
-  font-family: Muli, helvetica, verdana, arial, sans-serif;
-  font-style: initial;
-  letter-spacing: initial;
-  line-height: initial;
-  word-wrap: initial;
 }
 #pricing-table .pricing-table .option .title h3 {
   margin: 0;
   font-size: 18px;
   font-weight: 300;
-  font-family: Muli, helvetica, verdana, arial, sans-serif;
-  font-style: initial;
-  letter-spacing: initial;
-  line-height: initial;
-  word-wrap: initial;
-  color: #363636;
 }
 #pricing-table .pricing-table .option .product-img {
   display: block;
@@ -164,12 +141,6 @@ body {
   margin: 0;
   font-size: 15px;
   font-weight: 300;
-  font-family: Muli, helvetica, verdana, arial, sans-serif;
-  font-style: initial;
-  letter-spacing: initial;
-  line-height: initial;
-  word-wrap: initial;
-  color: #363636;
 }
 #pricing-table .pricing-table .option .pricing {
   text-align: center;
@@ -177,12 +148,6 @@ body {
 #pricing-table .pricing-table .option .pricing p.msrp {
   margin: 10px 0 0;
   font-size: 14px;
-  font-family: Muli, helvetica, verdana, arial, sans-serif;
-  font-style: initial;
-  letter-spacing: initial;
-  line-height: initial;
-  word-wrap: initial;
-  color: #363636;
 }
 #pricing-table .pricing-table .option .pricing p.msrp span {
   text-decoration: line-through;
@@ -190,12 +155,6 @@ body {
 #pricing-table .pricing-table .option .pricing p.price {
   margin: 5px 0 0;
   font-size: 14px;
-  font-family: Muli, helvetica, verdana, arial, sans-serif;
-  font-style: initial;
-  letter-spacing: initial;
-  line-height: initial;
-  word-wrap: initial;
-  color: #363636;
 }
 #pricing-table .pricing-table .option .pricing p.price span {
   font-weight: 700;
@@ -205,11 +164,6 @@ body {
   font-size: 14px;
   font-weight: 700;
   color: #28a745;
-  font-family: Muli, helvetica, verdana, arial, sans-serif;
-  font-style: initial;
-  letter-spacing: initial;
-  line-height: initial;
-  word-wrap: initial;
 }
 #pricing-table .pricing-table .option .button-container {
   margin: 30px 0 0;
@@ -223,10 +177,6 @@ body {
   border-radius: 40px;
   font-size: 20px;
   font-weight: 700;
-  font-style: initial;
-  letter-spacing: initial;
-  line-height: initial;
-  word-wrap: initial;
   text-align: center;
   color: #fff;
   background-color: #e2188d;
@@ -250,12 +200,6 @@ body {
   margin: 5px 0 0;
   text-align: center;
   font-size: 14px;
-  font-family: Muli, helvetica, verdana, arial, sans-serif;
-  font-style: initial;
-  letter-spacing: initial;
-  line-height: initial;
-  word-wrap: initial;
-  color: #363636;
 }
 #pricing-table .pricing-table .option .button-container p .checkmark {
   display: inline-block;
@@ -273,12 +217,6 @@ body {
   margin: 0;
   font-size: 16px;
   font-weight: 300;
-  font-family: Muli, helvetica, verdana, arial, sans-serif;
-  font-style: initial;
-  letter-spacing: initial;
-  line-height: initial;
-  word-wrap: initial;
-  color: #363636;
 }
 #pricing-table .bottom-copy p:first-child {
   margin: 0 0 10px;

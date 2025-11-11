@@ -110,5 +110,28 @@
             }
         });
     </script>
+    <script>
+        // Get all elements with the 'scroll' class
+        const scrollButtons = document.querySelectorAll('.scroll');
+        
+        // Add click event listener to each button
+        scrollButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                // Get the pricing table section
+                const pricingTable = document.getElementById('pricing-table');
+                
+                if (pricingTable) {
+                    // Calculate the target position with 50px offset
+                    const targetPosition = pricingTable.offsetTop - 50;
+                    
+                    // Smooth scroll to the target position
+                    window.scrollTo({
+                        top: targetPosition,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
   </body>
 </html>

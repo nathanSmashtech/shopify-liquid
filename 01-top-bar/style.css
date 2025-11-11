@@ -12,20 +12,18 @@ body {
   text-align: center;
   height: 50px;
   font-family: Muli, helvetica, verdana, arial, sans-serif;
-  position: sticky;
+  position: fixed;
   top: 0;
   z-index: 100;
+  width: 100%;
+  letter-spacing: initial;
+  line-height: initial;
 }
 #top-bar p {
   margin: 0;
   font-size: 18px;
   font-weight: 700;
   color: #ffc107;
-  font-family: Muli, helvetica, verdana, arial, sans-serif;
-  font-style: initial;
-  letter-spacing: initial;
-  line-height: initial;
-  word-wrap: initial;
 }
 @media (max-width: 767px) {
   #top-bar p {

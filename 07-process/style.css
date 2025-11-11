@@ -9,6 +9,8 @@ body {
   padding: 35px 0;
   color: #363636;
   background: #f9f9f8;
+  letter-spacing: initial;
+  line-height: initial;
 }
 #process .container {
   margin: 0 auto;
@@ -44,23 +46,12 @@ body {
   font-weight: 700;
   color: #1e204a;
   text-align: center;
-  font-family: Muli, helvetica, verdana, arial, sans-serif;
-  font-style: initial;
-  letter-spacing: initial;
-  line-height: initial;
-  word-wrap: initial;
 }
 #process .container .headlines h3 {
   margin: 0;
   font-size: 20px;
   font-weight: 600;
   text-align: center;
-  font-family: Muli, helvetica, verdana, arial, sans-serif;
-  font-style: initial;
-  letter-spacing: initial;
-  line-height: initial;
-  word-wrap: initial;
-  color: #363636;
 }
 #process .container .steps-container {
   display: flex;
@@ -109,24 +100,11 @@ body {
 #process .container .steps-container .step h3 {
   margin: 0 0 5px;
   font-size: 28px;
-  font-family: Muli, helvetica, verdana, arial, sans-serif;
-  font-style: initial;
-  letter-spacing: initial;
-  line-height: initial;
-  word-wrap: initial;
-  text-align: left;
-  color: #363636;
 }
 #process .container .steps-container .step p {
   margin: 0;
   font-size: 16px;
   line-height: 1.5;
-  font-family: Muli, helvetica, verdana, arial, sans-serif;
-  font-style: initial;
-  letter-spacing: initial;
-  word-wrap: initial;
-  text-align: left;
-  color: #363636;
 }
 #process .container .button-container {
   margin: 30px 0 0;
@@ -138,10 +116,6 @@ body {
   border-radius: 40px;
   font-size: 27px;
   font-weight: 700;
-  font-style: initial;
-  letter-spacing: initial;
-  line-height: initial;
-  word-wrap: initial;
   text-align: center;
   color: #fff;
   background-color: #e2188d;
@@ -160,11 +134,6 @@ body {
   font-size: 15px;
   font-weight: 700;
   color: #28a745;
-  font-family: Muli, helvetica, verdana, arial, sans-serif;
-  font-style: initial;
-  letter-spacing: initial;
-  line-height: initial;
-  word-wrap: initial;
 }
 #process .container .button-container p.guarantee .checkmark {
   display: inline-block;

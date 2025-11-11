@@ -7,6 +7,8 @@ body {
 #ingredients {
   font-family: Muli, helvetica, verdana, arial, sans-serif;
   color: #363636;
+  letter-spacing: initial;
+  line-height: initial;
 }
 @media (max-width: 767px) {
   #ingredients {
@@ -77,12 +79,6 @@ body {
   font-size: 27px;
   color: #1e204a;
   text-align: center;
-  font-family: Muli, helvetica, verdana, arial, sans-serif;
-  font-style: initial;
-  letter-spacing: initial;
-  line-height: initial;
-  word-wrap: initial;
-  font-weight: 700;
 }
 #ingredients .container .ingredients-container .left .content .item {
   display: flex;
@@ -104,25 +100,11 @@ body {
 #ingredients .container .ingredients-container .left .content .item h3 {
   margin: 0 0 5px;
   font-size: 24px;
-  font-family: Muli, helvetica, verdana, arial, sans-serif;
-  font-style: initial;
-  letter-spacing: initial;
-  line-height: initial;
-  word-wrap: initial;
-  text-align: left;
-  color: #363636;
-  font-weight: 700;
 }
 #ingredients .container .ingredients-container .left .content .item p {
   margin: 0;
   font-size: 16px;
   line-height: 1.5;
-  font-family: Muli, helvetica, verdana, arial, sans-serif;
-  font-style: initial;
-  letter-spacing: initial;
-  word-wrap: initial;
-  text-align: left;
-  color: #363636;
 }
 #ingredients .container .ingredients-container .left .content .button-container {
   margin: 35px 0 0;
@@ -134,10 +116,6 @@ body {
   border-radius: 40px;
   font-size: 27px;
   font-weight: 700;
-  font-style: initial;
-  letter-spacing: initial;
-  line-height: initial;
-  word-wrap: initial;
   text-align: center;
   color: #fff;
   background-color: #e2188d;
@@ -168,11 +146,6 @@ body {
   font-size: 15px;
   font-weight: 700;
   color: #28a745;
-  font-family: Muli, helvetica, verdana, arial, sans-serif;
-  font-style: initial;
-  letter-spacing: initial;
-  line-height: initial;
-  word-wrap: initial;
 }
 #ingredients .container .ingredients-container .left .content .button-container p.guarantee .checkmark {
   display: inline-block;

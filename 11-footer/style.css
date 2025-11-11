@@ -9,6 +9,8 @@ body {
   padding: 35px 0 0;
   color: #363636;
   background: #f9f9f8;
+  letter-spacing: initial;
+  line-height: initial;
 }
 #footer .container {
   margin: 0 auto;
@@ -56,24 +58,11 @@ body {
   display: block;
   font-size: 14px;
   line-height: 21px;
-  font-family: Muli, helvetica, verdana, arial, sans-serif;
-  font-style: initial;
-  letter-spacing: initial;
-  word-wrap: initial;
-  text-align: left;
-  color: #363636;
 }
 @media (max-width: 767px) {
   #footer .footer-container .copy small {
     margin: 15px 0 0;
     font-size: 12px;
-    font-family: Muli, helvetica, verdana, arial, sans-serif;
-    font-style: initial;
-    letter-spacing: initial;
-    line-height: initial;
-    word-wrap: initial;
-    text-align: left;
-    color: #363636;
   }
 }
 #footer .footer-container .copy ul {
@@ -93,13 +82,6 @@ body {
   font-size: 14px;
   font-weight: 700;
   cursor: pointer;
-  font-family: Muli, helvetica, verdana, arial, sans-serif;
-  font-style: initial;
-  letter-spacing: initial;
-  line-height: initial;
-  word-wrap: initial;
-  text-align: left;
-  color: #363636;
 }
 #footer .copyright {
   background-color: #1e204a;
@@ -110,11 +92,6 @@ body {
   line-height: 40px;
   color: #fff;
   text-align: center;
-  font-family: Muli, helvetica, verdana, arial, sans-serif;
-  font-style: initial;
-  letter-spacing: initial;
-  word-wrap: initial;
-  text-align: left;
 }
 @media (max-width: 767px) {
   #footer .copyright p {
@@ -148,13 +125,6 @@ body {
 }
 #footer .modal .modal-box h4 {
   font-size: 20px;
-  font-family: Muli, helvetica, verdana, arial, sans-serif;
-  font-style: initial;
-  letter-spacing: initial;
-  line-height: initial;
-  word-wrap: initial;
-  text-align: left;
-  color: #363636;
 }
 #footer .modal .modal-box .close {
   display: flex;
@@ -168,11 +138,4 @@ body {
   right: 0;
   font-size: 30px;
   cursor: pointer;
-  font-family: Muli, helvetica, verdana, arial, sans-serif;
-  font-style: initial;
-  letter-spacing: initial;
-  line-height: initial;
-  word-wrap: initial;
-  text-align: left;
-  color: #363636;
 }/*# sourceMappingURL=style.css.map */

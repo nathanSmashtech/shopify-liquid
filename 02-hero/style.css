@@ -7,6 +7,9 @@ body {
 #hero {
   font-family: Muli, helvetica, verdana, arial, sans-serif;
   color: #363636;
+  letter-spacing: initial;
+  line-height: initial;
+  margin: 50px 0 0;
   /**
   * Swiper 9.4.1
   * Most modern mobile touch slider and framework with hardware accelerated transitions
@@ -134,49 +137,24 @@ body {
   margin: 0;
   font-size: 16px;
   font-weight: 700;
-  font-family: Muli, helvetica, verdana, arial, sans-serif;
-  font-style: initial;
-  letter-spacing: initial;
-  line-height: initial;
-  word-wrap: initial;
-  text-align: left;
-  color: #363636;
 }
 #hero .container .hero-testimonial p.name {
   margin: 5px 0 0;
   font-size: 16px;
   font-weight: 300;
   font-style: italic;
-  font-family: Muli, helvetica, verdana, arial, sans-serif;
-  letter-spacing: initial;
-  line-height: initial;
-  word-wrap: initial;
-  text-align: left;
-  color: #363636;
 }
 #hero .container .hero-testimonial p.lost {
   margin: 5px 0 0;
   font-size: 16px;
   font-weight: 300;
   font-style: italic;
-  font-family: Muli, helvetica, verdana, arial, sans-serif;
-  letter-spacing: initial;
-  line-height: initial;
-  word-wrap: initial;
-  text-align: left;
-  color: #363636;
 }
 #hero .container h1 {
   margin: 0;
   font-size: 48px;
   font-weight: 700;
   color: #1e204a;
-  font-family: Muli, helvetica, verdana, arial, sans-serif;
-  font-style: initial;
-  letter-spacing: initial;
-  line-height: initial;
-  word-wrap: initial;
-  text-align: left;
 }
 @media (max-width: 1199px) {
   #hero .container h1 {
@@ -210,13 +188,6 @@ body {
   margin: 0;
   font-size: 15px;
   font-weight: 300;
-  font-family: Muli, helvetica, verdana, arial, sans-serif;
-  font-style: initial;
-  letter-spacing: initial;
-  line-height: initial;
-  word-wrap: initial;
-  text-align: left;
-  color: #363636;
 }
 @media (max-width: 767px) {
   #hero .container .star-rating {
@@ -234,10 +205,6 @@ body {
   border-radius: 40px;
   font-size: 27px;
   font-weight: 700;
-  font-style: initial;
-  letter-spacing: initial;
-  line-height: initial;
-  word-wrap: initial;
   text-align: center;
   color: #fff;
   background-color: #e2188d;
@@ -255,11 +222,6 @@ body {
   text-align: center;
   font-size: 15px;
   font-weight: 700;
-  font-family: Muli, helvetica, verdana, arial, sans-serif;
-  font-style: initial;
-  letter-spacing: initial;
-  line-height: initial;
-  word-wrap: initial;
   color: #28a745;
 }
 #hero .container .button-container p.guarantee .checkmark {
@@ -275,13 +237,6 @@ body {
   margin: 15px 0 0;
   font-size: 24px;
   font-weight: 600;
-  font-family: Muli, helvetica, verdana, arial, sans-serif;
-  font-style: initial;
-  letter-spacing: initial;
-  line-height: initial;
-  word-wrap: initial;
-  text-align: left;
-  color: #363636;
 }
 @media (max-width: 991px) {
   #hero .container h2 {
@@ -293,12 +248,6 @@ body {
   font-size: 16px;
   font-weight: 300;
   line-height: 1.5;
-  font-family: Muli, helvetica, verdana, arial, sans-serif;
-  font-style: initial;
-  letter-spacing: initial;
-  word-wrap: initial;
-  text-align: left;
-  color: #363636;
 }
 #hero .container .benefits {
   display: flex;
@@ -341,13 +290,6 @@ body {
   margin: 0;
   font-size: 16px;
   font-weight: 700;
-  font-family: Muli, helvetica, verdana, arial, sans-serif;
-  font-style: initial;
-  letter-spacing: initial;
-  line-height: initial;
-  word-wrap: initial;
-  text-align: left;
-  color: #363636;
 }
 @media (max-width: 399px) {
   #hero .container .benefits .item p {

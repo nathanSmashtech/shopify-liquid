@@ -22,11 +22,6 @@ body {
         font-size: 18px;
         font-weight: 700;
         color: #ffc107;
-        font-family: Muli, helvetica, verdana, arial, sans-serif;
-        font-style: initial;
-        letter-spacing: initial;
-        line-height: initial;
-        word-wrap: initial;
 
         @media (max-width: 767px) {
             font-size: 16px;
@@ -147,34 +142,18 @@ body {
                 margin: 0;
                 font-size: 16px;
                 font-weight: 700;
-                font-family: Muli, helvetica, verdana, arial, sans-serif;
-                font-style: initial;
-                letter-spacing: initial;
-                line-height: initial;
-                word-wrap: initial;
-                text-align: left;
             }
             p.name {
                 margin: 5px 0 0;
                 font-size: 16px;
                 font-weight: 300;
                 font-style: italic;
-                font-family: Muli, helvetica, verdana, arial, sans-serif;
-                letter-spacing: initial;
-                line-height: initial;
-                word-wrap: initial;
-                text-align: left;
             }
             p.lost {
                 margin: 5px 0 0;
                 font-size: 16px;
                 font-weight: 300;
                 font-style: italic;
-                font-family: Muli, helvetica, verdana, arial, sans-serif;
-                letter-spacing: initial;
-                line-height: initial;
-                word-wrap: initial;
-                text-align: left;
             }
         }
         h1 {
@@ -182,12 +161,6 @@ body {
             font-size: 48px;
             font-weight: 700;
             color: #1e204a;
-            font-family: Muli, helvetica, verdana, arial, sans-serif;
-            font-style: initial;
-            letter-spacing: initial;
-            line-height: initial;
-            word-wrap: initial;
-            text-align: left;
 
             @media (max-width: 1199px) {
                 font-size: 42px;
@@ -215,12 +188,6 @@ body {
                 margin: 0;
                 font-size: 15px;
                 font-weight: 300;
-                font-family: Muli, helvetica, verdana, arial, sans-serif;
-                font-style: initial;
-                letter-spacing: initial;
-                line-height: initial;
-                word-wrap: initial;
-                text-align: left;
             }
 
             @media (max-width: 767px) {
@@ -231,17 +198,13 @@ body {
         .button-container {
             margin: 15px 0 0;
 
-            .my-button {
+            .sf-button {
                 width: 100%;
                 display: inline-block;
                 padding: 25px 0;
                 border-radius: 40px;
                 font-size: 27px;
                 font-weight: 700;
-                font-style: initial;
-                letter-spacing: initial;
-                line-height: initial;
-                word-wrap: initial;
                 text-align: center;
                 color: #fff;
                 background-color: #e2188d;
@@ -260,11 +223,6 @@ body {
                 text-align: center;
                 font-size: 15px;
                 font-weight: 700;
-                font-family: Muli, helvetica, verdana, arial, sans-serif;
-                font-style: initial;
-                letter-spacing: initial;
-                line-height: initial;
-                word-wrap: initial;
                 color: #28a745;
 
                 .checkmark {
@@ -282,12 +240,6 @@ body {
             margin: 15px 0 0;
             font-size: 24px;
             font-weight: 600;
-            font-family: Muli, helvetica, verdana, arial, sans-serif;
-            font-style: initial;
-            letter-spacing: initial;
-            line-height: initial;
-            word-wrap: initial;
-            text-align: left;
 
             @media (max-width: 991px) {
                 font-size: 22px;
@@ -298,11 +250,6 @@ body {
             font-size: 16px;
             font-weight: 300;
             line-height: 1.5;
-            font-family: Muli, helvetica, verdana, arial, sans-serif;
-            font-style: initial;
-            letter-spacing: initial;
-            word-wrap: initial;
-            text-align: left;
         }
         .benefits {
             display: flex;
@@ -339,12 +286,6 @@ body {
                     margin: 0;
                     font-size: 16px;
                     font-weight: 700;
-                    font-family: Muli, helvetica, verdana, arial, sans-serif;
-                    font-style: initial;
-                    letter-spacing: initial;
-                    line-height: initial;
-                    word-wrap: initial;
-                    text-align: left;
 
                     @media (max-width: 399px) {
                         font-size: 12px;
@@ -650,7 +591,7 @@ body {
         margin: 30px 0 0;
         text-align: center;
 
-        .button {
+        .sf-button {
             display: inline-block;
             padding: 25px 55px;
             border-radius: 40px;
@@ -786,7 +727,7 @@ body {
         margin: 35px 0 0;
         text-align: center;
 
-        .button {
+        .sf-button {
             display: inline-block;
             padding: 25px 55px;
             border-radius: 40px;
@@ -886,6 +827,7 @@ body {
                     h2 {
                         margin: 0 0 30px;
                         font-size: 27px;
+                        color: #1e204a;
                         text-align: center;
                     }
                     .item {
@@ -917,7 +859,7 @@ body {
                         margin: 35px 0 0;
                         text-align: center;
 
-                        .button {
+                        .sf-button {
                             display: inline-block;
                             padding: 25px 55px;
                             border-radius: 40px;
@@ -966,6 +908,7 @@ body {
                 }
             }
             .right {
+                display: block;
                 background: url(https://dist1.skinnyfitdetox.com/images/new-lander/Collagen-Types_Desktop_02.jpg);
                 background-repeat: no-repeat;
                 background-size: cover;
@@ -1051,7 +994,7 @@ body {
             margin: 30px 0 0;
             text-align: center;
 
-            .button {
+            .sf-button {
                 display: inline-block;
                 padding: 25px 55px;
                 border-radius: 40px;
@@ -1229,7 +1172,7 @@ body {
             margin: 30px 0 0;
             text-align: center;
 
-            .button {
+            .sf-button {
                 display: inline-block;
                 padding: 25px 55px;
                 border-radius: 40px;
@@ -1430,7 +1373,7 @@ body {
                 margin: 30px 0 0;
                 text-align: center;
 
-                .button {
+                .sf-button {
                     display: block;
                     width: 290px;
                     margin: 20px auto 0;
@@ -1603,7 +1546,7 @@ body {
         margin: 35px 0 0;
         text-align: center;
 
-        .button {
+        .sf-button {
             display: inline-block;
             padding: 25px 55px;
             border-radius: 40px;

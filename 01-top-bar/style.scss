@@ -13,9 +13,12 @@ body {
     text-align: center;
     height: 50px;
     font-family: Muli, helvetica, verdana, arial, sans-serif;
-    position: sticky;
+    position: fixed;
     top: 0;
     z-index: 100;
+    width: 100%;
+    letter-spacing: initial;
+    line-height: initial;
 
     p {
         margin: 0;
