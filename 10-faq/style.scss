@@ -36,12 +36,6 @@ body {
             font-weight: 700;
             color: #1e204a;
             text-align: center;
-            font-family: Muli, helvetica, verdana, arial, sans-serif;
-            font-style: initial;
-            letter-spacing: initial;
-            line-height: initial;
-            word-wrap: initial;
-            text-align: left;
         }
     }
     .accordion {
@@ -73,21 +67,9 @@ body {
                 line-height: initial;
                 color: #363636;
                 cursor: pointer;
-                font-family: Muli, helvetica, verdana, arial, sans-serif;
-                font-style: initial;
-                letter-spacing: initial;
-                word-wrap: initial;
-                text-align: left;
 
                 .plus, .minus {
                     font-size: 32px;
-                    font-family: Muli, helvetica, verdana, arial, sans-serif;
-                    font-style: initial;
-                    letter-spacing: initial;
-                    line-height: initial;
-                    word-wrap: initial;
-                    text-align: left;
-                    color: #363636;
                 }
                 .minus {
                     display: none;
@@ -100,11 +82,6 @@ body {
                 font-weight: 300;
                 line-height: 1.5;
                 color: #363636;
-                font-family: Muli, helvetica, verdana, arial, sans-serif;
-                font-style: initial;
-                letter-spacing: initial;
-                word-wrap: initial;
-                text-align: left;
             }
         }
     }
@@ -118,10 +95,6 @@ body {
             border-radius: 40px;
             font-size: 27px;
             font-weight: 700;
-            font-style: initial;
-            letter-spacing: initial;
-            line-height: initial;
-            word-wrap: initial;
             text-align: center;
             color: #fff;
             background-color: #e2188d;
@@ -141,11 +114,6 @@ body {
             font-size: 15px;
             font-weight: 700;
             color: #28a745;
-            font-family: Muli, helvetica, verdana, arial, sans-serif;
-            font-style: initial;
-            letter-spacing: initial;
-            line-height: initial;
-            word-wrap: initial;
 
             .checkmark {
                 display: inline-block;
