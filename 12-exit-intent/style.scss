@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css?family=Muli:100,200,300,400,500,600,700');
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#exit-intent {
+    font-family: Muli, helvetica, verdana, arial, sans-serif;
+    color: #363636;
+    letter-spacing: initial;
+    line-height: initial;
+
+    .desktop-exit {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 15;
+
+        @media (max-width: 767px) {
+            display: none !important;
+        }
+
+        .underlay {
+            display: block;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-color: #00000080;
+            cursor: pointer;
+            animation: fadein .5s;
+        }
+        .exit-modal-desktop {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100vw;
+            height: 100vh;
+            position: fixed;
+            top: 0;
+            left: 0;
+
+            .modal-box {
+                display: flex;
+                position: relative;
+                width: 700px;
+                height: 400px;
+                background: #fff;
+
+                .left {
+                    img {
+                        display: block;
+                        width: 350px;
+                    }
+                }
+                .right {
+                    position: relative;
+
+                    .close-desktop-exit {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        width: 20px;
+                        height: 20px;
+                        margin: 10px 10px 0 0;
+                        top: 0;
+                        right: 0;
+                        font-size: 30px;
+                        position: absolute;
+                        z-index: 1;
+                        cursor: pointer;
+                    }
+                    .copy {
+                        padding: 25px;
+
+                        h2 {
+                            display: inline-block;
+                            margin: 0;
+                            padding: 2px;
+                            font-size: 18px;
+                            font-weight: 700;
+                            background-color: #ff0;
+                        }
+                        h3 {
+                            margin: 20px 0 0;
+                            font-size: 30px;
+                            font-weight: 300;
+                        }
+                        h4 {
+                            margin: 0;
+                            font-size: 36px;
+                            font-weight: 400;
+                            color: #e2188d;
+                        }
+                        .my-button {
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            width: 300px;
+                            height: 70px;
+                            margin: 20px 0 0;
+                            border-radius: 40px;
+                            font-size: 24px;
+                            font-weight: 500;
+                            text-align: center;
+                            color: #fff;
+                            background-color: #e2188d;
+                            transition: background-color .15s ease-in-out;
+                            cursor: pointer;
+                            animation: pulse 1.5s infinite;
+                            box-shadow: 0 2px 5px 2px #0003;
+                            outline: none;
+                            border: none;
+
+                            @keyframes pulse {
+                                0% {
+                                transform: scale(1);
+                                }
+                                50% {
+                                transform: scale(1.05);
+                                }
+                                100% {
+                                transform: scale(1);
+                                }
+                            }
+
+                            &:hover {
+                                background-color: #c21479;
+                                box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .mobile-exit {
+        display: none;
+        position: fixed;
+        inset: auto 0 0;
+        transform: translate(0);
+
+        @media (max-width: 767px) {
+            display: block;
+        }
+        @media (min-width: 768px) {
+            display: none !important;
+        }
+
+        &.collapsed {
+            transform: translateY(118px);
+        }
+
+        .exit-modal-mobile {
+            padding: 9px 15px;
+            text-align: center;
+            width: 100%;
+            background-color: #fff;
+            box-shadow: 0 -7px 7px -4px #0000001a;
+            box-sizing: border-box;
+
+            .button-container {
+                h2 {
+                    position: absolute;
+                    top: -40px;
+                    left: 0;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 288px;
+                    height: 40px;
+                    margin: 0;
+                    font-size: 24px;
+                    font-weight: 700;
+                    background-color: #ff0;
+                    border-top-left-radius: 10px;
+                    border-top-right-radius: 10px;
+
+                    @media (max-width: 575px) {
+                        top: -25px;
+                        width: 162px;
+                        height: 25px;
+                        font-size: 14px;
+                    }
+                }
+                .my-button {
+                    border-radius: 40px;
+                    line-height: initial;
+                    font-weight: 700;
+                    text-align: center;
+                    color: #fff;
+                    background-color: #e2188d;
+                    box-shadow: 0 0 16px #0000001a;
+                    transition: background-color .15s ease-in-out;
+                    cursor: pointer;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    column-gap: 5px;
+                    width: 365px;
+                    height: 72px;
+                    margin: 0 auto;
+                    padding: 0;
+                    font-size: 24px;
+                    outline: none;
+                    border: none;
+
+                    @media (max-width: 575px) {
+                        width: 100%;
+                    }
+                }
+                p.guarantee {
+                    margin: 5px 0 0;
+                    font-size: 14px;
+                    line-height: 1.5;
+
+                    .checkmark {
+                        display: inline-block;
+                        transform: rotate(45deg);
+                        height: 14px;
+                        width: 8px;
+                        border-bottom: 3px solid #28a745;
+                        border-right: 3px solid #28a745;
+                        position: relative;
+                        top: 2px;
+                        margin-right: 2px;
+                    }
+                }
+            }
+            .close-mobile-exit {
+                position: absolute;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 40px;
+                height: 40px;
+                line-height: 0;
+                cursor: pointer;
+                top: -40px;
+                right: 10px;
+                font-size: 42px;
+
+                &.expand {
+                    color: #e2188d;
+                }
+                &.hidden {
+                    display: none;
+                }
+            }
+        }
+    }
+}
