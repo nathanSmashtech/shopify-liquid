@@ -34,9 +34,9 @@
                             <p>+ FREE Silk Scrunchie ($22 value)</p>
                         </div>
                         <div class="button-container">
-                            <buy-now-button-aditgdwvobtu4enpxcaigenblock974f54egkxvq9 class="ai-buy-now-button-aditgdwvobtu4enpxcaigenblock974f54egkxvq9">
-                                <button type="button" class="ai-buy-now-button__btn-aditgdwvobtu4enpxcaigenblock974f54egkxvq9 my-button" data-product-id="9409658683637" data-variant-id="47279918481653" data-selling-plan-id="4801921269">SUBSCRIBE & SAVE »</button>
-                            </buy-now-button-aditgdwvobtu4enpxcaigenblock974f54egkxvq9>
+                            <buy-now-button-ad2fizjfovuphqxhyuaigenblock974f54edfabj8 class="ai-buy-now-button-ad2fizjfovuphqxhyuaigenblock974f54edfabj8">
+                              <button type="button" class="ai-buy-now-button__btn-ad2fizjfovuphqxhyuaigenblock974f54edfabj8 my-button" data-product-id="9409658683637" data-variant-id="47279918481653" data-selling-plan-id="4822761717">SUBSCRIBE & SAVE »</button>
+                            </buy-now-button-ad2fizjfovuphqxhyuaigenblock974f54edfabj8>
                             <p>Monthly Savings <span class="checkmark"></span> Cancel Anytime</p>
                         </div>
                     </div>
@@ -64,9 +64,13 @@
                             <p>+ FREE Silk Scrunchie ($22 value)</p>
                         </div>
                         <div class="button-container">
-                            <div class="my-button">SUBSCRIBE & SAVE »</div>
+                            <buy-now-button-aq3jqulfntffxb3bhbaigenblock9ff87cftewfcy class="ai-buy-now-button-aq3jqulfntffxb3bhbaigenblock9ff87cftewfcy">
+                              <button type="button" class="ai-buy-now-button__btn-aq3jqulfntffxb3bhbaigenblock9ff87cftewfcy my-button" data-product-id="9415618134261" data-variant-id="47296159777013" data-selling-plan-id="4822794485">SUBSCRIBE & SAVE »</button>
+                            </buy-now-button-aq3jqulfntffxb3bhbaigenblock9ff87cftewfcy>
                             <p>Monthly Savings <span class="checkmark"></span> Cancel Anytime</p>
-                            <div class="my-button border">ONE TIME PURCHASE »</div>
+                            <buy-now-button-av2z2zu92kzlsdwjuqaigenblock9ff87cffnabt4 class="ai-buy-now-container-av2z2zu92kzlsdwjuqaigenblock9ff87cffnabt4">
+                              <button class="ai-buy-now-button-av2z2zu92kzlsdwjuqaigenblock9ff87cffnabt4 my-button border" type="button" data-product-id="9415600734453" data-variant-id="47296101843189">ONE TIME PURCHASE »</button>
+                            </buy-now-button-av2z2zu92kzlsdwjuqaigenblock9ff87cffnabt4>
                             <p>One-Time Savings</p>
                         </div>
                     </div>
@@ -79,69 +83,191 @@
         </div>
     </section>
     <script>
-    (function() {
-      class BuyNowButtonaditgdwvobtu4enpxcaigenblock974f54egkxvq9 extends HTMLElement {
-        constructor() {
-          super();
-          this.button = this.querySelector('.ai-buy-now-button__btn-aditgdwvobtu4enpxcaigenblock974f54egkxvq9');
-        }
-
-        connectedCallback() {
-          this.button.addEventListener('click', this.handleBuyNow.bind(this));
-        }
-
-        async handleBuyNow(event) {
-          event.preventDefault();
-          
-          const button = event.target;
-          const variantId = button.dataset.variantId;
-          const sellingPlanId = button.dataset.sellingPlanId;
-          
-          if (!variantId) {
-            console.error('No variant ID found');
-            return;
-          }
-
-          button.disabled = true;
-          const originalText = button.textContent;
-          button.textContent = 'Processing...';
-
-          try {
-            const formData = {
-              items: [{
-                id: variantId,
-                quantity: 1
-              }]
-            };
-
-            if (sellingPlanId) {
-              formData.items[0].selling_plan = sellingPlanId;
-            }
-
-            const response = await fetch('/cart/add.js', {
-              method: 'POST',
-              headers: {
-                'Content-Type': 'application/json',
-              },
-              body: JSON.stringify(formData)
-            });
-
-            if (!response.ok) {
-              throw new Error('Failed to add to cart');
-            }
-
-            window.location.href = '/checkout';
-          } catch (error) {
-            console.error('Error:', error);
-            button.textContent = originalText;
-            button.disabled = false;
-            alert('There was an error processing your request. Please try again.');
-          }
-        }
+  (function() {
+    class BuyNowButtonad2fizjfovuphqxhyuaigenblock974f54edfabj8 extends HTMLElement {
+      constructor() {
+        super();
+        this.button = this.querySelector('.ai-buy-now-button__btn-ad2fizjfovuphqxhyuaigenblock974f54edfabj8');
       }
 
-      customElements.define('buy-now-button-aditgdwvobtu4enpxcaigenblock974f54egkxvq9', BuyNowButtonaditgdwvobtu4enpxcaigenblock974f54egkxvq9);
-    })();
+      connectedCallback() {
+        this.button.addEventListener('click', this.handleBuyNow.bind(this));
+      }
+
+      async handleBuyNow(event) {
+        event.preventDefault();
+        
+        const button = event.target;
+        const variantId = button.dataset.variantId;
+        const sellingPlanId = button.dataset.sellingPlanId;
+        
+        if (!variantId) {
+          console.error('No variant ID found');
+          return;
+        }
+
+        button.disabled = true;
+        const originalText = button.textContent;
+        button.textContent = 'Processing...';
+
+        try {
+          const formData = {
+            items: [{
+              id: variantId,
+              quantity: 1
+            }]
+          };
+
+          if (sellingPlanId) {
+            formData.items[0].selling_plan = sellingPlanId;
+          }
+
+          const response = await fetch('/cart/add.js', {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(formData)
+          });
+
+          if (!response.ok) {
+            throw new Error('Failed to add to cart');
+          }
+
+          window.location.href = '/checkout';
+        } catch (error) {
+          console.error('Error:', error);
+          button.textContent = originalText;
+          button.disabled = false;
+          alert('There was an error processing your request. Please try again.');
+        }
+      }
+    }
+
+    customElements.define('buy-now-button-ad2fizjfovuphqxhyuaigenblock974f54edfabj8', BuyNowButtonad2fizjfovuphqxhyuaigenblock974f54edfabj8);
+  })();
+    </script>
+    <script>
+  (function() {
+    class BuyNowButtonav2z2zu92kzlsdwjuqaigenblock9ff87cffnabt4 extends HTMLElement {
+      constructor() {
+        super();
+        this.button = this.querySelector('.ai-buy-now-button-av2z2zu92kzlsdwjuqaigenblock9ff87cffnabt4');
+        this.productId = this.button.getAttribute('data-product-id');
+        this.variantId = this.button.getAttribute('data-variant-id');
+      }
+
+      connectedCallback() {
+        this.button.addEventListener('click', this.handleClick.bind(this));
+      }
+
+      async handleClick(event) {
+        event.preventDefault();
+        
+        if (this.button.disabled) return;
+
+        const button = event.target;
+        button.disabled = true;
+        const originalText = button.textContent;
+        button.textContent = 'Processing...';
+
+        try {
+          const formData = {
+            items: [{
+              id: this.variantId,
+              quantity: 1
+            }]
+          };
+
+          const response = await fetch('/cart/add.js', {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(formData)
+          });
+
+          if (!response.ok) {
+            throw new Error('Failed to add to cart');
+          }
+
+          window.location.href = '/checkout';
+        } catch (error) {
+          console.error('Error:', error);
+          button.textContent = originalText;
+          button.disabled = false;
+          alert('There was an error processing your request. Please try again.');
+        }
+      }
+    }
+
+    customElements.define('buy-now-button-av2z2zu92kzlsdwjuqaigenblock9ff87cffnabt4', BuyNowButtonav2z2zu92kzlsdwjuqaigenblock9ff87cffnabt4);
+  })();
+    </script>
+    <script>
+  (function() {
+    class BuyNowButtonaq3jqulfntffxb3bhbaigenblock9ff87cftewfcy extends HTMLElement {
+      constructor() {
+        super();
+        this.button = this.querySelector('.ai-buy-now-button__btn-aq3jqulfntffxb3bhbaigenblock9ff87cftewfcy');
+      }
+
+      connectedCallback() {
+        this.button.addEventListener('click', this.handleBuyNow.bind(this));
+      }
+
+      async handleBuyNow(event) {
+        event.preventDefault();
+        
+        const button = event.target;
+        const variantId = button.dataset.variantId;
+        const sellingPlanId = button.dataset.sellingPlanId;
+        
+        if (!variantId) {
+          console.error('No variant ID found');
+          return;
+        }
+
+        button.disabled = true;
+        const originalText = button.textContent;
+        button.textContent = 'Processing...';
+
+        try {
+          const formData = {
+            items: [{
+              id: variantId,
+              quantity: 1
+            }]
+          };
+
+          if (sellingPlanId) {
+            formData.items[0].selling_plan = sellingPlanId;
+          }
+
+          const response = await fetch('/cart/add.js', {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(formData)
+          });
+
+          if (!response.ok) {
+            throw new Error('Failed to add to cart');
+          }
+
+          window.location.href = '/checkout';
+        } catch (error) {
+          console.error('Error:', error);
+          button.textContent = originalText;
+          button.disabled = false;
+          alert('There was an error processing your request. Please try again.');
+        }
+      }
+    }
+
+    customElements.define('buy-now-button-aq3jqulfntffxb3bhbaigenblock9ff87cftewfcy', BuyNowButtonaq3jqulfntffxb3bhbaigenblock9ff87cftewfcy);
+  })();
     </script>
   </body>
 </html>

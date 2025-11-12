@@ -74,6 +74,11 @@ body {
     padding: 35px 15px;
   }
 }
+@media (max-width: 767px) {
+  #ingredients .container .ingredients-container .left .content {
+    padding: 35px 0;
+  }
+}
 #ingredients .container .ingredients-container .left .content h2 {
   margin: 0 0 30px;
   font-size: 27px;

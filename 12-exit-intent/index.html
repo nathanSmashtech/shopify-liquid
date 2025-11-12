@@ -22,9 +22,9 @@
                             <h2>SPECIAL OFFER</h2>
                             <h3>Try it today for just</h3>
                             <h4>$19.95</h4>
-                            <buy-now-button-aefbeaej1dljlvkxtcaigenblock974f54ebwnrjx class="ai-buy-now-button-aefbeaej1dljlvkxtcaigenblock974f54ebwnrjx">
-                                <button type="button" class="ai-buy-now-button__btn-aefbeaej1dljlvkxtcaigenblock974f54ebwnrjx my-button" data-product-id="9409658683637" data-variant-id="47279918481653" data-selling-plan-id="4820205813">TRY IT FOR $19.95 »</button>
-                            </buy-now-button-aefbeaej1dljlvkxtcaigenblock974f54ebwnrjx>
+                            <buy-now-button-aajlqs3fmn051wvfeqaigenblock9ff87cfyulywn class="ai-buy-now-button-aajlqs3fmn051wvfeqaigenblock9ff87cfyulywn">
+                                <button type="button" class="ai-buy-now-button__btn-aajlqs3fmn051wvfeqaigenblock9ff87cfyulywn my-button" data-product-id="9409658683637" data-variant-id="47279918481653" data-selling-plan-id="4822827253">TRY IT FOR $19.95 »</button>
+                            </buy-now-button-aajlqs3fmn051wvfeqaigenblock9ff87cfyulywn>
                         </div>
                     </div>
                 </div>
@@ -34,9 +34,9 @@
             <div class="exit-modal-mobile">
                 <div class="button-container">
                     <h2>SPECIAL OFFER</h2>
-                    <buy-now-button-aefbeaej1dljlvkxtcaigenblock974f54ebwnrjx class="ai-buy-now-button-aefbeaej1dljlvkxtcaigenblock974f54ebwnrjx">
-                        <button type="button" class="ai-buy-now-button__btn-aefbeaej1dljlvkxtcaigenblock974f54ebwnrjx my-button" data-product-id="9409658683637" data-variant-id="47279918481653" data-selling-plan-id="4820205813">TRY IT FOR $19.95 »</button>
-                    </buy-now-button-aefbeaej1dljlvkxtcaigenblock974f54ebwnrjx>
+                    <buy-now-button-aajlqs3fmn051wvfeqaigenblock9ff87cfyulywn class="ai-buy-now-button-aajlqs3fmn051wvfeqaigenblock9ff87cfyulywn">
+                        <button type="button" class="ai-buy-now-button__btn-aajlqs3fmn051wvfeqaigenblock9ff87cfyulywn my-button" data-product-id="9409658683637" data-variant-id="47279918481653" data-selling-plan-id="4822827253">TRY IT FOR $19.95 »</button>
+                    </buy-now-button-aajlqs3fmn051wvfeqaigenblock9ff87cfyulywn>
                     <p class="guarantee"><span class="checkmark"></span> FREE Shipping + $50 in FREE Gifts.</p>
                 </div>
                 <div class="close-mobile-exit">×</div>
@@ -196,69 +196,69 @@
         });
     </script>
     <script>
-        (function() {
-        class BuyNowButtonaefbeaej1dljlvkxtcaigenblock974f54ebwnrjx extends HTMLElement {
-        constructor() {
-            super();
-            this.button = this.querySelector('.ai-buy-now-button__btn-aefbeaej1dljlvkxtcaigenblock974f54ebwnrjx');
+  (function() {
+    class BuyNowButtonaajlqs3fmn051wvfeqaigenblock9ff87cfyulywn extends HTMLElement {
+      constructor() {
+        super();
+        this.button = this.querySelector('.ai-buy-now-button__btn-aajlqs3fmn051wvfeqaigenblock9ff87cfyulywn');
+      }
+
+      connectedCallback() {
+        this.button.addEventListener('click', this.handleBuyNow.bind(this));
+      }
+
+      async handleBuyNow(event) {
+        event.preventDefault();
+        
+        const button = event.target;
+        const variantId = button.dataset.variantId;
+        const sellingPlanId = button.dataset.sellingPlanId;
+        
+        if (!variantId) {
+          console.error('No variant ID found');
+          return;
         }
 
-        connectedCallback() {
-            this.button.addEventListener('click', this.handleBuyNow.bind(this));
+        button.disabled = true;
+        const originalText = button.textContent;
+        button.textContent = 'Processing...';
+
+        try {
+          const formData = {
+            items: [{
+              id: variantId,
+              quantity: 1
+            }]
+          };
+
+          if (sellingPlanId) {
+            formData.items[0].selling_plan = sellingPlanId;
+          }
+
+          const response = await fetch('/cart/add.js', {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(formData)
+          });
+
+          if (!response.ok) {
+            throw new Error('Failed to add to cart');
+          }
+
+          window.location.href = '/checkout';
+        } catch (error) {
+          console.error('Error:', error);
+          button.textContent = originalText;
+          button.disabled = false;
+          alert('There was an error processing your request. Please try again.');
         }
+      }
+    }
 
-        async handleBuyNow(event) {
-            event.preventDefault();
-            
-            const button = event.target;
-            const variantId = button.dataset.variantId;
-            const sellingPlanId = button.dataset.sellingPlanId;
-            
-            if (!variantId) {
-            console.error('No variant ID found');
-            return;
-            }
-
-            button.disabled = true;
-            const originalText = button.textContent;
-            button.textContent = 'Processing...';
-
-            try {
-            const formData = {
-                items: [{
-                id: variantId,
-                quantity: 1
-                }]
-            };
-
-            if (sellingPlanId) {
-                formData.items[0].selling_plan = sellingPlanId;
-            }
-
-            const response = await fetch('/cart/add.js', {
-                method: 'POST',
-                headers: {
-                'Content-Type': 'application/json',
-                },
-                body: JSON.stringify(formData)
-            });
-
-            if (!response.ok) {
-                throw new Error('Failed to add to cart');
-            }
-
-            window.location.href = '/checkout';
-            } catch (error) {
-            console.error('Error:', error);
-            button.textContent = originalText;
-            button.disabled = false;
-            alert('There was an error processing your request. Please try again.');
-            }
-        }
-        }
-
-        customElements.define('buy-now-button-aefbeaej1dljlvkxtcaigenblock974f54ebwnrjx', BuyNowButtonaefbeaej1dljlvkxtcaigenblock974f54ebwnrjx);
-    })();
+    customElements.define('buy-now-button-aajlqs3fmn051wvfeqaigenblock9ff87cfyulywn', BuyNowButtonaajlqs3fmn051wvfeqaigenblock9ff87cfyulywn);
+  })();
     </script>
   </body>
 </html>
