@@ -184,6 +184,8 @@ body {
   transition: background-color 0.15s ease-in-out;
   cursor: pointer;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, Liberation Sans, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", Segoe UI Symbol, "Noto Color Emoji";
+  outline: none;
+  border: none;
 }
 #pricing-table .pricing-table .option .button-container .my-button:hover {
   background-color: #c21479;

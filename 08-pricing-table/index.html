@@ -34,7 +34,9 @@
                             <p>+ FREE Silk Scrunchie ($22 value)</p>
                         </div>
                         <div class="button-container">
-                            <div class="my-button">SUBSCRIBE & SAVE »</div>
+                            <buy-now-button-aditgdwvobtu4enpxcaigenblock974f54egkxvq9 class="ai-buy-now-button-aditgdwvobtu4enpxcaigenblock974f54egkxvq9">
+                                <button type="button" class="ai-buy-now-button__btn-aditgdwvobtu4enpxcaigenblock974f54egkxvq9 my-button" data-product-id="9409658683637" data-variant-id="47279918481653" data-selling-plan-id="4801921269">SUBSCRIBE & SAVE »</button>
+                            </buy-now-button-aditgdwvobtu4enpxcaigenblock974f54egkxvq9>
                             <p>Monthly Savings <span class="checkmark"></span> Cancel Anytime</p>
                         </div>
                     </div>
@@ -76,5 +78,70 @@
             </div>
         </div>
     </section>
+    <script>
+    (function() {
+      class BuyNowButtonaditgdwvobtu4enpxcaigenblock974f54egkxvq9 extends HTMLElement {
+        constructor() {
+          super();
+          this.button = this.querySelector('.ai-buy-now-button__btn-aditgdwvobtu4enpxcaigenblock974f54egkxvq9');
+        }
+
+        connectedCallback() {
+          this.button.addEventListener('click', this.handleBuyNow.bind(this));
+        }
+
+        async handleBuyNow(event) {
+          event.preventDefault();
+          
+          const button = event.target;
+          const variantId = button.dataset.variantId;
+          const sellingPlanId = button.dataset.sellingPlanId;
+          
+          if (!variantId) {
+            console.error('No variant ID found');
+            return;
+          }
+
+          button.disabled = true;
+          const originalText = button.textContent;
+          button.textContent = 'Processing...';
+
+          try {
+            const formData = {
+              items: [{
+                id: variantId,
+                quantity: 1
+              }]
+            };
+
+            if (sellingPlanId) {
+              formData.items[0].selling_plan = sellingPlanId;
+            }
+
+            const response = await fetch('/cart/add.js', {
+              method: 'POST',
+              headers: {
+                'Content-Type': 'application/json',
+              },
+              body: JSON.stringify(formData)
+            });
+
+            if (!response.ok) {
+              throw new Error('Failed to add to cart');
+            }
+
+            window.location.href = '/checkout';
+          } catch (error) {
+            console.error('Error:', error);
+            button.textContent = originalText;
+            button.disabled = false;
+            alert('There was an error processing your request. Please try again.');
+          }
+        }
+      }
+
+      customElements.define('buy-now-button-aditgdwvobtu4enpxcaigenblock974f54egkxvq9', BuyNowButtonaditgdwvobtu4enpxcaigenblock974f54egkxvq9);
+    })();
+    </script>
   </body>
 </html>
