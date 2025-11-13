@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css?family=Muli:100,200,300,400,500,600,700');
+// @import url('https://fonts.googleapis.com/css?family=Muli:100,200,300,400,500,600,700');
 
-body {
-    margin: 0;
-    padding: 0;
-}
+// body {
+//     margin: 0;
+//     padding: 0;
+// }
 
 #hero {
     font-family: Muli, helvetica, verdana, arial, sans-serif;
@@ -262,10 +262,6 @@ body {
                     margin: 0;
                     font-size: 16px;
                     font-weight: 700;
-
-                    @media (max-width: 399px) {
-                        font-size: 12px;
-                    }
                 }
             }
         }

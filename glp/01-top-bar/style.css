@@ -23,9 +23,4 @@
   #top-bar p {
     font-size: 16px;
   }
-}
-@media (max-width: 759px) {
-  #top-bar p {
-    font-size: 13px;
-  }
 }/*# sourceMappingURL=style.css.map */
