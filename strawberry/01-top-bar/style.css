@@ -1,0 +1,31 @@
+#top-bar {
+  background: #1e204a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 50px;
+  font-family: Muli, helvetica, verdana, arial, sans-serif;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  width: 100%;
+  letter-spacing: initial;
+  line-height: initial;
+}
+#top-bar p {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 700;
+  color: #ffc107;
+}
+@media (max-width: 767px) {
+  #top-bar p {
+    font-size: 16px;
+  }
+}
+@media (max-width: 759px) {
+  #top-bar p {
+    font-size: 13px;
+  }
+}/*# sourceMappingURL=style.css.map */

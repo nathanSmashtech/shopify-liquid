@@ -1,0 +1,26 @@
+// @import url('https://fonts.googleapis.com/css?family=Muli:100,200,300,400,500,600,700');
+
+// body {
+//     margin: 0;
+//     padding: 0;
+// }
+
+#as-seen-in {
+    .as-seen-in-container {
+        background: #1e204a;
+        padding: 50px 0;
+
+        img {
+            display: block;
+            width: 992px;
+            margin: 0 auto;
+
+            @media (max-width: 991px) {
+                width: 768px;
+            }
+            @media (max-width: 767px) {
+                width: 100%;
+            }
+        }
+    }
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>FAQ</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <section id="faq">
+        <div class="container">
+            <div class="headlines">
+                <h2>Frequently Asked Questions</h2>
+            </div>
+            <div class="accordion">
+              <div class="item">
+                  <h3>
+                      <span>How do I use GLP-1 Natural?</span>
+                      <span class="plus">+</span>
+                      <span class="minus">-</span>
+                  </h3>
+                  <p>Simply take 1 capsule of GLP-1 Natural a day once daily with a glass of water to start seeing transformative weight management benefits.</p>
+              </div>
+              <div class="item">
+                  <h3>
+                      <span>What is GLP-1 Natural, and why do I need it?</span>
+                      <span class="plus">+</span>
+                      <span class="minus">-</span>
+                  </h3>
+                  <p>GLP-1 Natural is a science-backed weight management supplement that helps you curb pesky cravings and maintain a healthy weight - no prescription or injections required. It works by naturally enhancing your body's GLP-1 response for effective, sustainable results.</p>
+              </div>
+              <div class="item">
+                  <h3>
+                      <span>Does GLP-1 Natural have any side effects?</span>
+                      <span class="plus">+</span>
+                      <span class="minus">-</span>
+                  </h3>
+                  <p>GLP-1 Natural is a safe and effective way to support your weight loss journey—without the risks or side effects of prescriptions or injections. Made with clinically studied ingredients, it works with your body to naturally enhance GLP-1 activity, helping curb cravings, improve digestion, and promote sustainable fat loss. Each capsule is carefully formulated, third-party tested, and manufactured in a GMP-certified facility to ensure quality, safety, and results you can trust.</p>
+              </div>
+          </div>
+            <div class="button-container">
+                <div class="my-button scroll">SAVE 50% TODAY »</div>
+                <p class="guarantee"><span class="checkmark"></span> FREE Shipping + $50 in FREE Gifts.</p>
+            </div>
+        </div>
+    </section>
+    <script>
+      const items = document.querySelectorAll('.accordion .item');
+
+      items.forEach(item => {
+          item.querySelector('h3').addEventListener('click', () => {
+              item.classList.toggle('active');
+          });
+      });
+    </script>
+  </body>
+</html>
