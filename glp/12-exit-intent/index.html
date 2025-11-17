@@ -22,9 +22,9 @@
                             <h2>SPECIAL OFFER</h2>
                             <h3>Try it today for just</h3>
                             <h4>$19.95</h4>
-                            <buy-now-button-aajlqs3fmn051wvfeqaigenblock9ff87cfyulywn class="ai-buy-now-button-aajlqs3fmn051wvfeqaigenblock9ff87cfyulywn">
-                                <button type="button" class="ai-buy-now-button__btn-aajlqs3fmn051wvfeqaigenblock9ff87cfyulywn my-button" data-product-id="9409658683637" data-variant-id="47279918481653" data-selling-plan-id="4822827253">TRY IT FOR $19.95 »</button>
-                            </buy-now-button-aajlqs3fmn051wvfeqaigenblock9ff87cfyulywn>
+                            <cta-glp-1item-sub-exit>
+                                <button type="button" class="cta-glp-1item-sub-exit my-button" data-product-id="9409658683637" data-variant-id="47279918481653" data-selling-plan-id="4822827253">TRY IT FOR $19.95 »</button>
+                            </cta-glp-1item-sub-exit>
                         </div>
                     </div>
                 </div>
@@ -34,9 +34,9 @@
             <div class="exit-modal-mobile">
                 <div class="button-container">
                     <h2>SPECIAL OFFER</h2>
-                    <buy-now-button-aajlqs3fmn051wvfeqaigenblock9ff87cfyulywn class="ai-buy-now-button-aajlqs3fmn051wvfeqaigenblock9ff87cfyulywn">
-                        <button type="button" class="ai-buy-now-button__btn-aajlqs3fmn051wvfeqaigenblock9ff87cfyulywn my-button" data-product-id="9409658683637" data-variant-id="47279918481653" data-selling-plan-id="4822827253">TRY IT FOR $19.95 »</button>
-                    </buy-now-button-aajlqs3fmn051wvfeqaigenblock9ff87cfyulywn>
+                    <cta-glp-1item-sub-exit>
+                        <button type="button" class="cta-glp-1item-sub-exit my-button" data-product-id="9409658683637" data-variant-id="47279918481653" data-selling-plan-id="4822827253">TRY IT FOR $19.95 »</button>
+                    </cta-glp-1item-sub-exit>
                     <p class="guarantee"><span class="checkmark"></span> FREE Shipping + $50 in FREE Gifts.</p>
                 </div>
                 <div class="close-mobile-exit">×</div>
@@ -197,10 +197,10 @@
     </script>
     <script>
   (function() {
-    class BuyNowButtonaajlqs3fmn051wvfeqaigenblock9ff87cfyulywn extends HTMLElement {
+    class CtaGlp1ItemSubExit extends HTMLElement {
       constructor() {
         super();
-        this.button = this.querySelector('.ai-buy-now-button__btn-aajlqs3fmn051wvfeqaigenblock9ff87cfyulywn');
+        this.button = this.querySelector('.cta-glp-1item-sub-exit');
       }
 
       connectedCallback() {
@@ -255,15 +255,18 @@
 
         try {
           const formData = {
-            items: [{
-              id: variantId,
+            items: [, {
+              id: '47312317776117',
               quantity: 1
+            }, {
+              id: '47312298475765',
+              quantity: 1
+            }, {
+              id: variantId,
+              quantity: 1,
+              selling_plan: sellingPlanId
             }]
           };
-
-          if (sellingPlanId) {
-            formData.items[0].selling_plan = sellingPlanId;
-          }
 
           const response = await fetch('/cart/add.js', {
             method: 'POST',
@@ -272,6 +275,8 @@
             },
             body: JSON.stringify(formData)
           });
+
+          console.log('response: ', response)
 
           if (!response.ok) {
             throw new Error('Failed to add to cart');
@@ -290,7 +295,7 @@
       }
     }
 
-    customElements.define('buy-now-button-aajlqs3fmn051wvfeqaigenblock9ff87cfyulywn', BuyNowButtonaajlqs3fmn051wvfeqaigenblock9ff87cfyulywn);
+    customElements.define('cta-glp-1item-sub-exit', CtaGlp1ItemSubExit);
   })();
     </script>
   </body>

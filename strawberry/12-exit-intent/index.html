@@ -14,7 +14,7 @@
             <div class="exit-modal-desktop">
                 <div class="modal-box">
                     <div class="left">
-                        <img alt="SkinnyFit Limited Time Offer" src="https://dist1.skinnyfitdetox.com/images/glp/SF_Website_Lander_New-Design_GLP1_Exit-Intent_Desktop.jpg">
+                        <img alt="SkinnyFit Limited Time Offer" src="https://dist1.skinnyfitdetox.com/images/strawberry-watermelon/SF_Website_Lander_New-Design_Strawberry-Watermelon_Exit-Intent_Desktop.jpg">
                     </div>
                     <div class="right">
                         <div class="close-desktop-exit">×</div>
@@ -22,9 +22,9 @@
                             <h2>SPECIAL OFFER</h2>
                             <h3>Try it today for just</h3>
                             <h4>$19.95</h4>
-                            <buy-now-button-as1f5blu2ajhidxbmoaigenblock9ff87cfcxnqan class="ai-buy-now-button-as1f5blu2ajhidxbmoaigenblock9ff87cfcxnqan">
-                                <button type="button" class="ai-buy-now-button__btn-as1f5blu2ajhidxbmoaigenblock9ff87cfcxnqan my-button" data-product-id="9417409560821" data-variant-id="47302004277493" data-selling-plan-id="4823449845">TRY IT FOR $19.95 »</button>
-                            </buy-now-button-as1f5blu2ajhidxbmoaigenblock9ff87cfcxnqan>
+                            <cta-sw-1item-sub-exit>
+                                <button type="button" class="cta-sw-1item-sub-exit my-button" data-product-id="9417409560821" data-variant-id="47302004277493" data-selling-plan-id="4823449845">TRY IT FOR $19.95 »</button>
+                            </cta-sw-1item-sub-exit>
                         </div>
                     </div>
                 </div>
@@ -34,9 +34,9 @@
             <div class="exit-modal-mobile">
                 <div class="button-container">
                     <h2>SPECIAL OFFER</h2>
-                    <buy-now-button-as1f5blu2ajhidxbmoaigenblock9ff87cfcxnqan class="ai-buy-now-button-as1f5blu2ajhidxbmoaigenblock9ff87cfcxnqan">
-                        <button type="button" class="ai-buy-now-button__btn-as1f5blu2ajhidxbmoaigenblock9ff87cfcxnqan my-button" data-product-id="9417409560821" data-variant-id="47302004277493" data-selling-plan-id="4823449845">TRY IT FOR $19.95 »</button>
-                    </buy-now-button-as1f5blu2ajhidxbmoaigenblock9ff87cfcxnqan>
+                    <cta-sw-1item-sub-exit>
+                        <button type="button" class="cta-sw-1item-sub-exit my-button" data-product-id="9417409560821" data-variant-id="47302004277493" data-selling-plan-id="4823449845">TRY IT FOR $19.95 »</button>
+                    </cta-sw-1item-sub-exit>
                     <p class="guarantee"><span class="checkmark"></span> FREE Shipping + $50 in FREE Gifts.</p>
                 </div>
                 <div class="close-mobile-exit">×</div>
@@ -197,10 +197,10 @@
     </script>
     <script>
   (function() {
-    class BuyNowButtonas1f5blu2ajhidxbmoaigenblock9ff87cfcxnqan extends HTMLElement {
+    class CtaSw1ItemSubExit extends HTMLElement {
       constructor() {
         super();
-        this.button = this.querySelector('.ai-buy-now-button__btn-as1f5blu2ajhidxbmoaigenblock9ff87cfcxnqan');
+        this.button = this.querySelector('.cta-sw-1item-sub-exit');
       }
 
       connectedCallback() {
@@ -255,15 +255,18 @@
 
         try {
           const formData = {
-            items: [{
-              id: variantId,
+            items: [, {
+              id: '47312317776117',
               quantity: 1
+            }, {
+              id: '47312298475765',
+              quantity: 1
+            }, {
+              id: variantId,
+              quantity: 1,
+              selling_plan: sellingPlanId
             }]
           };
-
-          if (sellingPlanId) {
-            formData.items[0].selling_plan = sellingPlanId;
-          }
 
           const response = await fetch('/cart/add.js', {
             method: 'POST',
@@ -272,6 +275,8 @@
             },
             body: JSON.stringify(formData)
           });
+
+          console.log('response: ', response)
 
           if (!response.ok) {
             throw new Error('Failed to add to cart');
@@ -290,7 +295,7 @@
       }
     }
 
-    customElements.define('buy-now-button-as1f5blu2ajhidxbmoaigenblock9ff87cfcxnqan', BuyNowButtonas1f5blu2ajhidxbmoaigenblock9ff87cfcxnqan);
+    customElements.define('cta-sw-1item-sub-exit', CtaSw1ItemSubExit);
   })();
     </script>
   </body>
