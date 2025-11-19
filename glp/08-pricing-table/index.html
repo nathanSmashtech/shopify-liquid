@@ -35,7 +35,7 @@
                         </div>
                         <div class="button-container">
                             <cta-glp-1item-sub>
-                              <button type="button" class="cta-glp-1item-sub my-button" data-product-id="9409658683637" data-variant-id="47279918481653" data-selling-plan-id="4822761717">SUBSCRIBE & SAVE »</button>
+                              <button type="button" class="cta-glp-1item-sub my-button" data-product-id="9409658683637" data-variant-id="47279918481653" data-selling-plan-id="4829380853">SUBSCRIBE & SAVE »</button>
                             </cta-glp-1item-sub>
                             <p>Monthly Savings <span class="checkmark"></span> Cancel Anytime</p>
                         </div>
@@ -65,7 +65,7 @@
                         </div>
                         <div class="button-container">
                             <cta-glp-2item-sub>
-                              <button type="button" class="cta-glp-2item-sub my-button" data-product-id="9415618134261" data-variant-id="47296159777013" data-selling-plan-id="4822794485">SUBSCRIBE & SAVE »</button>
+                              <button type="button" class="cta-glp-2item-sub my-button" data-product-id="9415618134261" data-variant-id="47296159777013" data-selling-plan-id="4829708533">SUBSCRIBE & SAVE »</button>
                             </cta-glp-2item-sub>
                             <p>Monthly Savings <span class="checkmark"></span> Cancel Anytime</p>
                             <cta-glp-2item-otp>
@@ -169,6 +169,7 @@
 
               window.location.href = '/checkout';
               setTimeout(function () {
+                button.disabled = false;
                 button.textContent = originalText;
               }, 1000);
             } catch (error) {
@@ -270,6 +271,7 @@
 
               window.location.href = '/checkout';
               setTimeout(function () {
+                button.disabled = false;
                 button.textContent = originalText;
               }, 1000);
             } catch (error) {
@@ -366,6 +368,7 @@
 
             window.location.href = '/checkout';
             setTimeout(function () {
+              button.disabled = false;
               button.textContent = originalText;
             }, 1000);
           } catch (error) {
