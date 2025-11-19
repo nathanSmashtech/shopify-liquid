@@ -284,6 +284,7 @@
 
           window.location.href = '/checkout';
           setTimeout(function () {
+            button.disabled = false;
             button.textContent = originalText;
           }, 1000);
         } catch (error) {
