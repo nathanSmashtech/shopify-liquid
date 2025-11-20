@@ -1,0 +1,41 @@
+#as-seen-in .as-seen-in-container {
+  background: #1e204a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 175px;
+  padding: 0 15px;
+}
+@media (max-width: 767px) {
+  #as-seen-in .as-seen-in-container {
+    height: 125px;
+  }
+}
+#as-seen-in .as-seen-in-container img {
+  display: block;
+}
+@media (max-width: 1399px) {
+  #as-seen-in .as-seen-in-container img.desktop-img {
+    width: 100%;
+  }
+}
+@media (max-width: 767px) {
+  #as-seen-in .as-seen-in-container img.desktop-img {
+    display: none;
+  }
+}
+#as-seen-in .as-seen-in-container img.mobile-img {
+  display: none;
+}
+@media (max-width: 767px) {
+  #as-seen-in .as-seen-in-container img.mobile-img {
+    display: block;
+    height: 100px;
+  }
+}
+@media (max-width: 399px) {
+  #as-seen-in .as-seen-in-container img.mobile-img {
+    width: 100%;
+    height: auto;
+  }
+}/*# sourceMappingURL=style.css.map */
