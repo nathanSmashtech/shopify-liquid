@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Contact Modal</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <section id="contact-modal">
+        <div class="modal contact-modal">
+            <div class="modal-box">
+                <div class="close contact-close">×</div>
+                <h4 class="modal-title">Contact Us</h4>
+                <div class="modal-body">
+                  CONTACT MODAL CONTENT
+              </div>
+            </div>
+        </div>
+    </section>
+    <script>
+        const contactModal = document.querySelector('.contact-modal');
+        const contactButton = document.querySelector('.contact-button');
+        const contactCloseButton = document.querySelector('.contact-close');
+
+        contactButton.addEventListener('click', () => {
+            contactModal.style.display = 'flex';
+        });
+
+        contactCloseButton.addEventListener('click', () => {
+            contactModal.style.display = 'none';
+        });
+
+        window.addEventListener('click', (e) => {
+            if (e.target === contactModal) {
+                contactModal.style.display = 'none';
+            }
+        });
+    </script>
+  </body>
+</html>

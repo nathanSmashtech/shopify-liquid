@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Terms Modal</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <section id="privacy-modal">
+      <div class="modal terms-modal">
+          <div class="modal-box">
+              <div class="close terms-close">×</div>
+              <h4 class="modal-title">Terms & Conditions</h4>
+              <div class="modal-body">
+                  TERMS MODAL CONTENT
+              </div>
+          </div>
+      </div>
+    </section>
+    <script>
+        const termsModal = document.querySelector('.terms-modal');
+        const termsButton = document.querySelector('.terms-button');
+        const termsCloseButton = document.querySelector('.terms-close');
+
+        termsButton.addEventListener('click', () => {
+            termsModal.style.display = 'flex';
+        });
+
+        termsCloseButton.addEventListener('click', () => {
+            termsModal.style.display = 'none';
+        });
+
+        window.addEventListener('click', (e) => {
+            if (e.target === termsModal) {
+                termsModal.style.display = 'none';
+            }
+        });
+    </script>
+  </body>
+</html>

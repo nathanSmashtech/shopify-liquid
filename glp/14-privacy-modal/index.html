@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Privacy Modal</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <section id="privacy-modal">
+      <div class="modal privacy-modal">
+          <div class="modal-box">
+              <div class="close privacy-close">×</div>
+              <h4 class="modal-title">Privacy Policy</h4>
+              <div class="modal-body">
+                  PRIVACY MODAL CONTENT
+              </div>
+          </div>
+      </div>
+    </section>
+    <script>
+      const privacyModal = document.querySelector('.privacy-modal');
+      const privacyButton = document.querySelector('.privacy-button');
+      const privacyCloseButton = document.querySelector('.privacy-close');
+
+      privacyButton.addEventListener('click', () => {
+          privacyModal.style.display = 'flex';
+      });
+
+      privacyCloseButton.addEventListener('click', () => {
+          privacyModal.style.display = 'none';
+      });
+
+      window.addEventListener('click', (e) => {
+          if (e.target === privacyModal) {
+              privacyModal.style.display = 'none';
+          }
+      });
+    </script>
+  </body>
+</html>
