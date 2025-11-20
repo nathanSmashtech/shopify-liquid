@@ -1,0 +1,46 @@
+// @import url('https://fonts.googleapis.com/css?family=Muli:100,200,300,400,500,600,700');
+
+// body {
+//     margin: 0;
+//     padding: 0;
+// }
+
+#as-seen-in {
+    .as-seen-in-container {
+        background: #1e204a;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 175px;
+        padding: 0 15px;
+
+        @media (max-width: 767px) {
+            height: 125px;
+        }
+
+        img {
+            display: block;
+
+            &.desktop-img {
+                @media (max-width: 1399px) {
+                    width: 100%
+                }
+                @media (max-width: 767px) {
+                    display: none;
+                }
+            }
+            &.mobile-img {
+                display: none;
+
+                @media (max-width: 767px) {
+                    display: block;
+                    height: 100px;
+                }
+                @media (max-width: 399px) {
+                    width: 100%;
+                    height: auto;
+                }
+            }
+        }
+    }
+}
