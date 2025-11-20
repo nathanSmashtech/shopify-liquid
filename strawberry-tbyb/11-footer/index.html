@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Footer</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <section id="footer">
+        <div class="container">
+            <div class="footer-container">
+                <div class="logo"><img src="https://images.skinnyfit.io/lander-redesign/SF_Website_Lander_New-Design_Logo_SkinnyFit.svg" alt="SkinnyFit"></div>
+                <div class="copy">
+                    <small><strong>Disclosure: </strong>These statements have not been evaluated by the Food and Drug Administration. This product is not intended to diagnose, treat, cure, or prevent any disease.</small>
+                    <ul>
+                        <li class="contact-button">Contact Us</li>
+                        <li class="privacy-button">Privacy Policy</li>
+                        <li class="terms-button">Terms</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>© 2025 SkinnyFit, Inc. All rights reserved.</p>
+        </div>
+        <div class="modal contact-modal">
+            <div class="modal-box">
+                <div class="close contact-close">×</div>
+                <h4 class="modal-title">Contact Us</h4>
+                <div class="modal-body">
+                  CONTACT MODAL CONTENT
+              </div>
+            </div>
+        </div>
+        <div class="modal privacy-modal">
+            <div class="modal-box">
+                <div class="close privacy-close">×</div>
+                <h4 class="modal-title">Privacy Policy</h4>
+                <div class="modal-body">
+                    PRIVACY MODAL CONTENT
+                </div>
+            </div>
+        </div>
+        <div class="modal terms-modal">
+            <div class="modal-box">
+                <div class="close terms-close">×</div>
+                <h4 class="modal-title">Terms & Conditions</h4>
+                <div class="modal-body">
+                    TERMS MODAL CONTENT
+                </div>
+            </div>
+        </div>
+    </section>
+    <script>
+        const contactModal = document.querySelector('.contact-modal');
+        const contactButton = document.querySelector('.contact-button');
+        const contactCloseButton = document.querySelector('.contact-close');
+
+        contactButton.addEventListener('click', () => {
+            contactModal.style.display = 'flex';
+        });
+
+        contactCloseButton.addEventListener('click', () => {
+            contactModal.style.display = 'none';
+        });
+
+        window.addEventListener('click', (e) => {
+            if (e.target === contactModal) {
+                contactModal.style.display = 'none';
+            }
+        });
+    </script>
+    <script>
+      const privacyModal = document.querySelector('.privacy-modal');
+      const privacyButton = document.querySelector('.privacy-button');
+      const privacyCloseButton = document.querySelector('.privacy-close');
+
+      privacyButton.addEventListener('click', () => {
+          privacyModal.style.display = 'flex';
+      });
+
+      privacyCloseButton.addEventListener('click', () => {
+          privacyModal.style.display = 'none';
+      });
+
+      window.addEventListener('click', (e) => {
+          if (e.target === privacyModal) {
+              privacyModal.style.display = 'none';
+          }
+      });
+    </script>
+    <script>
+        const termsModal = document.querySelector('.terms-modal');
+        const termsButton = document.querySelector('.terms-button');
+        const termsCloseButton = document.querySelector('.terms-close');
+
+        termsButton.addEventListener('click', () => {
+            termsModal.style.display = 'flex';
+        });
+
+        termsCloseButton.addEventListener('click', () => {
+            termsModal.style.display = 'none';
+        });
+
+        window.addEventListener('click', (e) => {
+            if (e.target === termsModal) {
+                termsModal.style.display = 'none';
+            }
+        });
+    </script>
+    <script>
+        // Get all elements with the 'scroll' class
+        const scrollButtons = document.querySelectorAll('.scroll');
+        
+        // Add click event listener to each button
+        scrollButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                // Get the pricing table section
+                const pricingTable = document.getElementById('pricing-table');
+                
+                if (pricingTable) {
+                    // Calculate the target position with 50px offset
+                    const targetPosition = pricingTable.offsetTop + 100;
+                    
+                    // Smooth scroll to the target position
+                    window.scrollTo({
+                        top: targetPosition,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+  </body>
+</html>
