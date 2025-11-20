@@ -30,17 +30,14 @@
                 </div>
             </div>
         </div>
-        <div class="mobile-exit" style="display: none;">
+        <div id="mobile-sticky-button" class="mobile-exit">
             <div class="exit-modal-mobile">
                 <div class="button-container">
-                    <h2>SPECIAL OFFER</h2>
                     <cta-glp-1item-sub-tbyb>
-                      <button type="button" class="cta-glp-1item-sub-tbyb my-button" data-product-id="9424892461301" data-variant-id="47322783711477" data-selling-plan-id="4830888181">TRY IT FOR ONLY $27.95 »</button>
+                        <button id="mobile-hero-button" type="button" class="cta-glp-1item-sub-tbyb my-button" data-product-id="9424892461301" data-variant-id="47322783711477" data-selling-plan-id="4830888181">TRY IT FOR ONLY $27.95 »</button>
                     </cta-glp-1item-sub-tbyb>
                     <p class="guarantee"><span class="checkmark"></span> Try your full-size products personalized just for you.</p>
                 </div>
-                <div class="close-mobile-exit">×</div>
-                <div class="close-mobile-exit expand hidden">+</div>
             </div>
         </div>
     </section>
@@ -75,125 +72,49 @@
     }
     </script>
     <script>
-        // get scroll speed on lander
-        const checkScrollSpeed = (function () {
-            let lastPos;
-            let newPos;
-            let timer;
-            let delta;
-            const delay = 50; // in "ms" (higher means lower fidelity)
+        (function() {
+            var hero = document.getElementById('mobile-hero-button');
+            var sticky = document.getElementById('mobile-sticky-button');
 
-            function clear() {
-            lastPos = null;
-            delta = 0;
+            if (!hero || !sticky) return;
+
+            // Only activate on smaller viewports (adjust breakpoint as needed)
+            function shouldActivate() {
+                return window.matchMedia('(max-width: 767px)').matches;
             }
 
-            clear();
+            var observer = null;
 
-            return function () {
-            newPos = window.scrollY;
-            if (lastPos != null) {
-                delta = newPos - lastPos;
+            function createObserver() {
+                if (observer) observer.disconnect();
+
+                observer = new IntersectionObserver(function(entries) {
+                    entries.forEach(function(entry) {
+                        if (entry.isIntersecting) {
+                            sticky.classList.remove('show');
+                        } else {
+                            sticky.classList.add('show');
+                        }
+                    });
+                }, { threshold: 0 });
+
+                observer.observe(hero);
             }
-            lastPos = newPos;
-            clearTimeout(timer);
-            timer = setTimeout(clear, delay);
-            return delta;
-            };
+
+            // Initialize if appropriate
+            if (shouldActivate()) createObserver();
+
+            // Recreate observer on resize if crossing breakpoint
+            var lastMatch = shouldActivate();
+            window.addEventListener('resize', function() {
+                var match = shouldActivate();
+                if (match !== lastMatch) {
+                    lastMatch = match;
+                    if (match) createObserver();
+                    else if (observer) { observer.disconnect(); sticky.classList.remove('show'); }
+                }
+            });
         })();
-
-        // slideDown helper (vanilla)
-        function slideDown(el, duration = 300) {
-            if (!el) return;
-            // if already visible, do nothing
-            const style = window.getComputedStyle(el);
-            if (style.display !== 'none' && parseFloat(style.opacity || '1') > 0) return;
-
-            // prepare element
-            el.style.removeProperty('display');
-            let display = window.getComputedStyle(el).display;
-            if (display === 'none') display = 'block';
-            el.style.display = display;
-
-            const height = el.scrollHeight;
-
-            el.style.overflow = 'hidden';
-            el.style.height = '0px';
-            el.style.opacity = 0;
-            // force reflow so the starting styles are applied
-            el.getBoundingClientRect();
-
-            el.style.transition = `height ${duration}ms ease, opacity ${duration}ms ease`;
-            requestAnimationFrame(() => {
-            el.style.height = height + 'px';
-            el.style.opacity = 1;
-            });
-
-            // cleanup after animation
-            setTimeout(() => {
-            el.style.removeProperty('height');
-            el.style.removeProperty('overflow');
-            el.style.removeProperty('transition');
-            el.style.removeProperty('opacity');
-            }, duration);
-        }
-
-        let potentialExit = false;
-        let tempPosition = 0;
-        let exitShown = false;
-        const userAgent = navigator.userAgent || '';
-
-        // listen to "scroll" event
-        window.addEventListener('scroll', () => {
-            if (window.innerWidth < 768) {
-            if (exitShown === false) {
-                if (potentialExit === false) {
-                if (/android/i.test(userAgent)) {
-                    if (checkScrollSpeed() < -50) {
-                    potentialExit = true;
-                    setTimeout(() => {
-                        potentialExit = false;
-                    }, 800);
-                    tempPosition = window.scrollY;
-                    }
-                } else {
-                    if (checkScrollSpeed() < -10) {
-                    potentialExit = true;
-                    setTimeout(() => {
-                        potentialExit = false;
-                    }, 800);
-                    tempPosition = window.scrollY;
-                    }
-                }
-                } else {
-                const mobileExitEl = document.querySelector('.mobile-exit');
-
-                if (/android/i.test(userAgent)) {
-                    if ((tempPosition - window.scrollY) > 1000) {
-                    exitShown = true;
-                    slideDown(mobileExitEl, 300);
-                    }
-                }
-                if ((tempPosition - window.scrollY) > 300) {
-                    exitShown = true;
-                    slideDown(mobileExitEl, 300);
-                }
-                }
-            }
-            }
-        });
-    </script>
-    <script>
-        document.querySelectorAll('.close-mobile-exit').forEach(function (button) {
-            button.addEventListener('click', function () {
-                document.querySelectorAll('.close-mobile-exit').forEach(function (el) {
-                    el.classList.toggle('hidden');
-                });
-                document.querySelectorAll('.mobile-exit').forEach(function (el) {
-                    el.classList.toggle('collapsed');
-                });
-            });
-        });
     </script>
   </body>
 </html>

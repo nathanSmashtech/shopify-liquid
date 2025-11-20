@@ -125,10 +125,20 @@
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
 }
 #exit-intent .mobile-exit {
-  display: none;
   position: fixed;
-  inset: auto 0 0;
-  transform: translate(0);
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transform: translateY(110%);
+  transition: transform 300ms ease, opacity 300ms ease;
+  opacity: 0;
+  z-index: 9999;
+  display: block;
+  pointer-events: auto;
+}
+#exit-intent .mobile-exit.show {
+  transform: translateY(0);
+  opacity: 1;
 }
 @media (max-width: 767px) {
   #exit-intent .mobile-exit {
@@ -140,9 +150,6 @@
     display: none !important;
   }
 }
-#exit-intent .mobile-exit.collapsed {
-  transform: translateY(118px);
-}
 #exit-intent .mobile-exit .exit-modal-mobile {
   padding: 9px 15px;
   text-align: center;
@@ -150,30 +157,6 @@
   background-color: #fff;
   box-shadow: 0 -7px 7px -4px rgba(0, 0, 0, 0.1019607843);
   box-sizing: border-box;
-}
-#exit-intent .mobile-exit .exit-modal-mobile .button-container h2 {
-  position: absolute;
-  top: -40px;
-  left: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 288px;
-  height: 40px;
-  margin: 0;
-  font-size: 24px;
-  font-weight: 700;
-  background-color: #ff0;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-}
-@media (max-width: 575px) {
-  #exit-intent .mobile-exit .exit-modal-mobile .button-container h2 {
-    top: -25px;
-    width: 162px;
-    height: 25px;
-    font-size: 14px;
-  }
 }
 #exit-intent .mobile-exit .exit-modal-mobile .button-container .my-button {
   border-radius: 40px;
@@ -218,23 +201,4 @@
   position: relative;
   top: 2px;
   margin-right: 2px;
-}
-#exit-intent .mobile-exit .exit-modal-mobile .close-mobile-exit {
-  position: absolute;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 40px;
-  height: 40px;
-  line-height: 0;
-  cursor: pointer;
-  top: -40px;
-  right: 10px;
-  font-size: 42px;
-}
-#exit-intent .mobile-exit .exit-modal-mobile .close-mobile-exit.expand {
-  color: #e2188d;
-}
-#exit-intent .mobile-exit .exit-modal-mobile .close-mobile-exit.hidden {
-  display: none;
 }/*# sourceMappingURL=style.css.map */
