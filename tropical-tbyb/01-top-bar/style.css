@@ -23,4 +23,13 @@
   #top-bar p {
     font-size: 16px;
   }
+}
+#top-bar p span {
+  font-weight: 500;
+  color: #ffffff;
+}
+@media (max-width: 767px) {
+  #top-bar p span {
+    display: block;
+  }
 }/*# sourceMappingURL=style.css.map */
