@@ -188,8 +188,10 @@
 }
 #exit-intent .mobile-exit .exit-modal-mobile .button-container p.guarantee {
   margin: 5px 0 0;
-  font-size: 14px;
-  line-height: 1.5;
+  text-align: center;
+  font-size: 15px;
+  font-weight: 700;
+  color: #28a745;
 }
 #exit-intent .mobile-exit .exit-modal-mobile .button-container p.guarantee .checkmark {
   display: inline-block;
