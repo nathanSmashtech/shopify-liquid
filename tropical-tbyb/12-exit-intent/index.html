@@ -21,10 +21,10 @@
                         <div class="copy">
                             <h2>SPECIAL OFFER</h2>
                             <h3>Try it today for just</h3>
-                            <h4>$19.95</h4>
-                            <cta-tp-1item-sub-exit>
-                                <button type="button" class="cta-tp-1item-sub-exit my-button" data-product-id="9424661577973" data-variant-id="47321877709045" data-selling-plan-id="4830626037">TRY IT FOR $19.95 »</button>
-                            </cta-tp-1item-sub-exit>
+                            <h4>$27.95</h4>
+                            <cta-tp-1item-sub-tbyb>
+                              <button type="button" class="cta-tp-1item-sub-tbyb my-button" data-product-id="9424915267829" data-variant-id="47322875199733" data-selling-plan-id="4831019253">TRY IT FOR ONLY $27.95 »</button>
+                            </cta-tp-1item-sub-tbyb>
                         </div>
                     </div>
                 </div>
@@ -34,10 +34,10 @@
             <div class="exit-modal-mobile">
                 <div class="button-container">
                     <h2>SPECIAL OFFER</h2>
-                    <cta-tp-1item-sub-exit>
-                        <button type="button" class="cta-tp-1item-sub-exit my-button" data-product-id="9424661577973" data-variant-id="47321877709045" data-selling-plan-id="4830626037">TRY IT FOR $19.95 »</button>
-                    </cta-tp-1item-sub-exit>
-                    <p class="guarantee"><span class="checkmark"></span> FREE Shipping + $50 in FREE Gifts.</p>
+                    <cta-tp-1item-sub-tbyb>
+                      <button type="button" class="cta-tp-1item-sub-tbyb my-button" data-product-id="9424915267829" data-variant-id="47322875199733" data-selling-plan-id="4831019253">TRY IT FOR ONLY $27.95 »</button>
+                    </cta-tp-1item-sub-tbyb>
+                    <p class="guarantee"><span class="checkmark"></span> Try your full-size products personalized just for you.</p>
                 </div>
                 <div class="close-mobile-exit">×</div>
                 <div class="close-mobile-exit expand hidden">+</div>
@@ -194,110 +194,6 @@
                 });
             });
         });
-    </script>
-    <script>
-  (function() {
-    class CtaTp1ItemSubExit extends HTMLElement {
-      constructor() {
-        super();
-        this.button = this.querySelector('.cta-tp-1item-sub-exit');
-      }
-
-      connectedCallback() {
-        this.button.addEventListener('click', this.handleBuyNow.bind(this));
-      }
-
-      async handleBuyNow(event) {
-        event.preventDefault();
-        
-        const button = event.target;
-        const variantId = button.dataset.variantId;
-        const sellingPlanId = button.dataset.sellingPlanId;
-        
-        if (!variantId) {
-          console.error('No variant ID found');
-          return;
-        }
-
-        button.disabled = true;
-        const originalText = button.textContent;
-        button.textContent = 'Processing...';
-
-        try {
-          const response = await fetch('/cart/clear.js', {
-            method: 'POST',
-            headers: {
-              'Content-Type': 'application/json',
-            },
-          });
-
-          if (response.ok) {
-            if (window.location.pathname === '/cart') {
-              window.location.reload();
-            } else {
-              document.dispatchEvent(new CustomEvent('cart:refresh'));
-              
-              const cartCountElements = document.querySelectorAll('[data-cart-count], .cart-count, #cart-icon-bubble');
-              cartCountElements.forEach(element => {
-                if (element.querySelector('span')) {
-                  element.querySelector('span').textContent = '0';
-                } else {
-                  element.textContent = '0';
-                }
-              });
-            }
-          } else {
-            console.error('Failed to clear cart');
-          }
-        } catch (error) {
-          console.error('Error clearing cart:', error);
-        }
-
-        try {
-          const formData = {
-            items: [, {
-              id: '47312317776117',
-              quantity: 1
-            }, {
-              id: '47312298475765',
-              quantity: 1
-            }, {
-              id: variantId,
-              quantity: 1,
-              selling_plan: sellingPlanId
-            }]
-          };
-
-          const response = await fetch('/cart/add.js', {
-            method: 'POST',
-            headers: {
-              'Content-Type': 'application/json',
-            },
-            body: JSON.stringify(formData)
-          });
-
-          console.log('response: ', response)
-
-          if (!response.ok) {
-            throw new Error('Failed to add to cart');
-          }
-
-          window.location.href = '/checkout';
-          setTimeout(function () {
-            button.disabled = false;
-            button.textContent = originalText;
-          }, 1000);
-        } catch (error) {
-          console.error('Error:', error);
-          button.textContent = originalText;
-          button.disabled = false;
-          alert('There was an error processing your request. Please try again.');
-        }
-      }
-    }
-
-    customElements.define('cta-tp-1item-sub-exit', CtaTp1ItemSubExit);
-  })();
     </script>
   </body>
 </html>
