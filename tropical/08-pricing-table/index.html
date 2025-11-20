@@ -107,7 +107,7 @@
 
             button.disabled = true;
             const originalText = button.textContent;
-            button.textContent = 'Processing...';
+            button.textContent = 'APPLYING DISCOUNT...';
 
             try {
               const response = await fetch('/cart/clear.js', {
@@ -209,7 +209,7 @@
 
             button.disabled = true;
             const originalText = button.textContent;
-            button.textContent = 'Processing...';
+            button.textContent = 'APPLYING DISCOUNT...';
 
             try {
               const response = await fetch('/cart/clear.js', {
@@ -307,7 +307,7 @@
           const button = event.target;
           button.disabled = true;
           const originalText = button.textContent;
-          button.textContent = 'Processing...';
+          button.textContent = 'APPLYING DISCOUNT...';
 
           try {
             const response = await fetch('/cart/clear.js', {
