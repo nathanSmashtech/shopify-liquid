@@ -47,6 +47,7 @@
 @media (max-width: 767px) {
   #pricing-table .pricing-table {
     flex-direction: column;
+    margin: 30px 0 20px;
   }
 }
 #pricing-table .pricing-table .option {
