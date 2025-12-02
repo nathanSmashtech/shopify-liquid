@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Footer</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <section id="footer">
+        <div class="container">
+            <div class="footer-container">
+                <div class="logo"><img src="https://images.skinnyfit.io/lander-redesign/SF_Website_Lander_New-Design_Logo_SkinnyFit.svg" alt="SkinnyFit"></div>
+                <div class="copy">
+                    <small><strong>Disclosure: </strong>These statements have not been evaluated by the Food and Drug Administration. This product is not intended to diagnose, treat, cure, or prevent any disease.</small>
+                    <ul>
+                        <li class="contact-button">Contact Us</li>
+                        <li class="privacy-button">Privacy Policy</li>
+                        <li class="terms-button">Terms</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>© 2025 SkinnyFit, Inc. All rights reserved.</p>
+        </div>
+    </section>
+    <script>
+        // Get all elements with the 'scroll' class
+        const scrollButtons = document.querySelectorAll('.scroll');
+        
+        // Add click event listener to each button
+        scrollButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                // Get the pricing table section
+                const pricingTable = document.getElementById('pricing-table');
+                
+                if (pricingTable) {
+                    // Calculate the target position with 50px offset
+                    const targetPosition = pricingTable.offsetTop + 100;
+                    
+                    // Smooth scroll to the target position
+                    window.scrollTo({
+                        top: targetPosition,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+  </body>
+</html>

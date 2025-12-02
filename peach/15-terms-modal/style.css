@@ -1,0 +1,48 @@
+@import url("https://fonts.googleapis.com/css?family=Muli:100,200,300,400,500,600,700");
+#terms-modal {
+  font-family: Muli, helvetica, verdana, arial, sans-serif;
+  color: #363636;
+  letter-spacing: initial;
+  line-height: initial;
+}
+#terms-modal .modal {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(54, 54, 54, 0.5);
+  z-index: 101;
+}
+#terms-modal .modal .modal-box {
+  display: block;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 500px;
+  height: 500px;
+  background: #fff;
+  border-radius: 5px;
+  padding: 15px;
+  box-sizing: border-box;
+  overflow: scroll;
+}
+#terms-modal .modal .modal-box h4 {
+  font-size: 20px;
+}
+#terms-modal .modal .modal-box .close {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20px;
+  height: 20px;
+  margin: 10px 10px 0 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 30px;
+  cursor: pointer;
+}/*# sourceMappingURL=style.css.map */

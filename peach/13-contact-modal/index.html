@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Contact Modal</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <section id="contact-modal">
+        <div class="modal contact-modal">
+            <div class="modal-box">
+                <div class="close contact-close">×</div>
+                <h4 class="modal-title">Contact Us</h4>
+                <div class="modal-body">
+                  <h5>Customer Support</h5>
+                  <p>We are happy to help. Contact us anytime 24/7 via email or phone.</p>
+                  <p>Email: <a href="mailto:hello@skinnyfit.com">hello@skinnyfit.com</a></p>
+                  <p>Phone: 1-888-862-1758</p>
+                  <h5>Returns Address</h5>
+                  <p>Please call customer care for an RMA number (within 30 days of purchase) before shipping returns to the address below:</p>
+                  <p>Ship to: RETURNS</p>
+                  <p>C/O FULFILLMENT</p>
+                  <p>11551 E. 45th Avenue, Unit C</p>
+                  <p>Denver, CO 80239</p>
+                  <p>Packages without an RMA number attached will not be accepted.</p>
+              </div>
+            </div>
+        </div>
+    </section>
+    <script>
+        const contactModal = document.querySelector('.contact-modal');
+        const contactButton = document.querySelector('.contact-button');
+        const contactCloseButton = document.querySelector('.contact-close');
+
+        contactButton.addEventListener('click', () => {
+            contactModal.style.display = 'flex';
+        });
+
+        contactCloseButton.addEventListener('click', () => {
+            contactModal.style.display = 'none';
+        });
+
+        window.addEventListener('click', (e) => {
+            if (e.target === contactModal) {
+                contactModal.style.display = 'none';
+            }
+        });
+    </script>
+  </body>
+</html>

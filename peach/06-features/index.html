@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Features</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <section id="features">
+        <div class="container">
+            <div class="headlines">
+                <h2>Clean, Gluten Free, All-Natural Ingredients</h2>
+                <h3>More than just collagen. Enhanced with key ingredients & premium sourcing for remarkable results.</h3>
+            </div>
+            <div class="ingredients-container">
+                <div class="ingredient">
+                    <img alt="Dairy-free" src="https://dist1.skinnyfitdetox.com/images/fibriss/Navy_Dariy-Free.png">
+                    <h3>Dairy-Free</h3>
+                </div>
+                <div class="ingredient">
+                    <img alt="Non-GMO" src="https://dist1.skinnyfitdetox.com/images/fibriss/Navy_NON-GMO.png">
+                    <h3>Non-GMO</h3>
+                </div>
+                <div class="ingredient">
+                    <img alt="Sugar-Free" src="https://dist1.skinnyfitdetox.com/images/fibriss/Navy_Sugar-Free.png">
+                    <h3>Sugar-Free</h3>
+                </div>
+                <div class="ingredient">
+                    <img alt="Gluten-Free" src="https://dist1.skinnyfitdetox.com/images/fibriss/Navy_Gluten-Free.png">
+                    <h3>Gluten-Free</h3>
+                </div>
+            </div>
+            <div class="button-container">
+                <div class="my-button scroll">SAVE 50% TODAY »</div>
+                <p class="guarantee"><span class="checkmark"></span> FREE Shipping + $50 in FREE Gifts.</p>
+                <div class="my-button border">Look at the Label <span class="plus">+</span></div>
+            </div>
+        </div>
+        <div class="label-modal">
+            <div class="modal-box">
+                <div class="close label-close">×</div>
+                <img src="https://dist1.skinnyfitdetox.com/images/fibriss/Supplement-Facts_New-Tropical-Punch_v2.jpg">
+            </div>
+        </div>
+    </section>
+    <script>
+        const labelModal = document.querySelector('.label-modal');
+        const labelButton = document.querySelector('.my-button.border');
+        const closeButton = document.querySelector('.label-close');
+
+        labelButton.addEventListener('click', () => {
+            labelModal.style.display = 'flex';
+        });
+
+        closeButton.addEventListener('click', () => {
+            labelModal.style.display = 'none';
+        });
+
+        window.addEventListener('click', (e) => {
+            if (e.target === labelModal) {
+                labelModal.style.display = 'none';
+            }
+        });
+    </script>
+  </body>
+</html>
