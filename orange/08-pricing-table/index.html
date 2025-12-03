@@ -20,7 +20,7 @@
                         <h4>50% OFF</h4>
                         <h3>1 Bag</h3>
                     </div>
-                    <img class="product-img" src="https://dist1.skinnyfitdetox.com/images/pricing-table/2025/Peach-Mango_GWP_1.png">
+                    <img class="product-img" src="https://dist1.skinnyfitdetox.com/images/pricing-table/2025/Orange-Pineapple_GWP_1.png">
                     <div class="star-rating">
                         <img src="https://dist1.skinnyfitdetox.com/images/Detox/stars/four-half-stars.png">
                         <p>30,697 Reviews</p>
@@ -34,9 +34,9 @@
                             <p>+ FREE Silk Scrunchie ($22 value)</p>
                         </div>
                         <div class="button-container">
-                            <cta-pm-1item-sub>
-                              <button type="button" class="cta-pm-1item-sub my-button" data-product-id="9439595495669" data-variant-id="47374170325237" data-selling-plan-id="4849959157">SUBSCRIBE & SAVE »</button>
-                            </cta-pm-1item-sub>
+                            <cta-op-1item-sub>
+                              <button type="button" class="cta-op-1item-sub my-button" data-product-id="9439901188341" data-variant-id="47375601041653" data-selling-plan-id="4850352373">SUBSCRIBE & SAVE »</button>
+                            </cta-op-1item-sub>
                             <p>Monthly Savings <span class="checkmark"></span> Cancel Anytime</p>
                         </div>
                     </div>
@@ -50,7 +50,7 @@
                         <h4>60% OFF</h4>
                         <h3>2 Bags</h3>
                     </div>
-                    <img class="product-img" src="https://dist1.skinnyfitdetox.com/images/pricing-table/2025/Peach-Mango_GWP_2.png">
+                    <img class="product-img" src="https://dist1.skinnyfitdetox.com/images/pricing-table/2025/Orange-Pineapple_GWP_2.png">
                     <div class="star-rating">
                             <img src="https://dist1.skinnyfitdetox.com/images/Detox/stars/four-half-stars.png">
                             <p>30,697 Reviews</p>
@@ -64,13 +64,13 @@
                             <p>+ FREE Silk Scrunchie ($22 value)</p>
                         </div>
                         <div class="button-container">
-                            <cta-pm-2item-sub>
-                              <button type="button" class="cta-pm-2item-sub my-button" data-product-id="9439598608629" data-variant-id="47374211088629" data-selling-plan-id="4850024693">SUBSCRIBE & SAVE »</button>
-                            </cta-pm-2item-sub>
+                            <cta-op-2item-sub>
+                              <button type="button" class="cta-op-2item-sub my-button" data-product-id="9439902630133" data-variant-id="47375606743285" data-selling-plan-id="4850385141">SUBSCRIBE & SAVE »</button>
+                            </cta-op-2item-sub>
                             <p>Monthly Savings <span class="checkmark"></span> Cancel Anytime</p>
-                            <cta-pm-2item-otp>
-                              <button class="cta-pm-2item-otp my-button border" type="button" data-product-id="9439599231221" data-variant-id="47374214496501">ONE TIME PURCHASE »</button>
-                            </cta-pm-2item-otp>
+                            <cta-op-2item-otp>
+                              <button class="cta-op-2item-otp my-button border" type="button" data-product-id="9439902073077" data-variant-id="47375604220149">ONE TIME PURCHASE »</button>
+                            </cta-op-2item-otp>
                             <p>One-Time Savings</p>
                         </div>
                     </div>
@@ -83,10 +83,10 @@
     </section>
     <script>
       (function() {
-        class CtaPm1ItemSub extends HTMLElement {
+        class CtaOp1ItemSub extends HTMLElement {
           constructor() {
             super();
-            this.button = this.querySelector('.cta-pm-1item-sub');
+            this.button = this.querySelector('.cta-op-1item-sub');
           }
 
           connectedCallback() {
@@ -180,15 +180,15 @@
           }
         }
 
-        customElements.define('cta-pm-1item-sub', CtaPm1ItemSub);
+        customElements.define('cta-op-1item-sub', CtaOp1ItemSub);
       })();
     </script>
     <script>
       (function() {
-        class CtaPm2ItemSub extends HTMLElement {
+        class CtaOp2ItemSub extends HTMLElement {
           constructor() {
             super();
-            this.button = this.querySelector('.cta-pm-2item-sub');
+            this.button = this.querySelector('.cta-op-2item-sub');
           }
 
           connectedCallback() {
@@ -282,15 +282,15 @@
           }
         }
 
-        customElements.define('cta-pm-2item-sub', CtaPm2ItemSub);
+        customElements.define('cta-op-2item-sub', CtaOp2ItemSub);
       })();
     </script>
     <script>
       (function() {
-        class CtaPm2ItemOtp extends HTMLElement {
+        class CtaOp2ItemOtp extends HTMLElement {
           constructor() {
           super();
-          this.button = this.querySelector('.cta-pm-2item-otp');
+          this.button = this.querySelector('.cta-op-2item-otp');
           this.productId = this.button.getAttribute('data-product-id');
           this.variantId = this.button.getAttribute('data-variant-id');
         }
@@ -379,7 +379,7 @@
         }
         }
 
-        customElements.define('cta-pm-2item-otp', CtaPm2ItemOtp);
+        customElements.define('cta-op-2item-otp', CtaOp2ItemOtp);
       })();
     </script>
   </body>
