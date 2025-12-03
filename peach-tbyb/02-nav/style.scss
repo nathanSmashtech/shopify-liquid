@@ -1,0 +1,70 @@
+// @import url('https://fonts.googleapis.com/css?family=Muli:100,200,300,400,500,600,700');
+
+// body {
+//     margin: 0;
+//     padding: 0;
+// }
+
+#nav {
+    margin: 50px 0 0;
+
+    .nav-items {
+        display: flex;
+        column-gap: 3px;
+        font-family: Muli, helvetica, verdana, arial, sans-serif;
+
+        a {
+            flex: 1;
+            height: 34px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            font-size: 16px;
+            color: #fff;
+            font-weight: 700;
+            text-decoration: none;
+
+            .active {
+                position: absolute;
+                display: inline-block;
+                width: 0;
+                height: 0;
+                border-style: solid;
+                border-width: 15px 20px 0 20px;
+                position: absolute;
+                inset: 36px 0 0;
+                margin: auto;
+            }
+
+            &.strawberry {
+                background: #f0005d;
+
+                .active {
+                    border-color: #f0005d transparent transparent transparent;
+                }
+            }
+            &.tropical {
+                background: #e71791;
+
+                .active {
+                    border-color: #e71791 transparent transparent transparent;
+                }
+            }
+            &.peach {
+                background: #fa9384;
+
+                .active {
+                    border-color: #fa9384 transparent transparent transparent;
+                }
+            }
+            &.orange {
+                background: #fba919;
+
+                .active {
+                    border-color: #fba919 transparent transparent transparent;
+                }
+            }
+        }
+    }
+}
