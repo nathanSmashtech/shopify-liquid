@@ -1,9 +1,9 @@
 <script>
       (function() {
-        class CtaTp1ItemSubTbyb extends HTMLElement {
+        class CtaPm1ItemSubTbyb extends HTMLElement {
           constructor() {
             super();
-            this.button = this.querySelector('.cta-tp-1item-sub-tbyb');
+            this.button = this.querySelector('.cta-pm-1item-sub-tbyb');
           }
 
           connectedCallback() {
@@ -97,6 +97,6 @@
           }
         }
 
-        customElements.define('cta-tp-1item-sub-tbyb', CtaTp1ItemSubTbyb);
+        customElements.define('cta-pm-1item-sub-tbyb', CtaPm1ItemSubTbyb);
       })();
     </script>
