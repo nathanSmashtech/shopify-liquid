@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Exit Intent</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <section id="exit-intent">
+        <div id="ouibounce-modal" class="desktop-exit">
+            <div class="underlay"></div>
+            <div class="exit-modal-desktop">
+                <div class="modal-box">
+                    <div class="left">
+                        <img alt="SkinnyFit Limited Time Offer" src="https://dist1.skinnyfitdetox.com/images/new-lander/new-formula/SF_Website_Lander_New-Design_Exit-Intent_Desktop.jpg">
+                    </div>
+                    <div class="right">
+                        <div class="close-desktop-exit">×</div>
+                        <div class="copy">
+                            <h2>SPECIAL OFFER</h2>
+                            <h3>Try it today for just</h3>
+                            <h4>$27</h4>
+                            <cta-pm-1item-sub-tbyb>
+                                <button type="button" class="cta-pm-1item-sub-tbyb my-button" data-product-id="9439598248181" data-variant-id="47374200471797" data-selling-plan-id="4849991925">TRY IT FOR ONLY $27 »</button>
+                            </cta-pm-1item-sub-tbyb>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="mobile-sticky-button" class="mobile-exit">
+            <div class="exit-modal-mobile">
+                <div class="button-container">
+                    <cta-pm-1item-sub-tbyb>
+                        <button type="button" class="cta-pm-1item-sub-tbyb my-button" data-product-id="9439598248181" data-variant-id="47374200471797" data-selling-plan-id="4849991925">TRY IT FOR ONLY $27 »</button>
+                    </cta-pm-1item-sub-tbyb>
+                    <p class="guarantee"><span class="checkmark"></span> FREE Shipping + $50 in FREE Gifts.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script>
+        (function() {
+        var script = document.createElement('script');
+        script.src = 'https://cdnjs.cloudflare.com/ajax/libs/ouibounce/0.0.12/ouibounce.min.js';
+        script.onload = initOuibounce;
+        document.head.appendChild(script);
+        })();
+
+        function initOuibounce() {
+        const modal = document.getElementById('ouibounce-modal');
+
+        const instance = ouibounce(modal, {
+            aggressive: true,
+            sensitivity: 20,
+            timer: 1000,
+            delay: 0,
+            cookieExpire: 7,
+            callback: function() {
+                modal.style.display = 'block';
+            }
+        });
+
+        // Close handlers
+        document.querySelectorAll('.close-desktop-exit').forEach(closeBtn => {
+            closeBtn.addEventListener('click', function() {
+                modal.style.display = 'none';
+            });
+        });
+    }
+    </script>
+    <script>
+        (function() {
+            var hero = document.getElementById('mobile-hero-button');
+            var sticky = document.getElementById('mobile-sticky-button');
+
+            if (!hero || !sticky) return;
+
+            // Only activate on smaller viewports (adjust breakpoint as needed)
+            function shouldActivate() {
+                return window.matchMedia('(max-width: 767px)').matches;
+            }
+
+            var observer = null;
+
+            function createObserver() {
+                if (observer) observer.disconnect();
+
+                observer = new IntersectionObserver(function(entries) {
+                    entries.forEach(function(entry) {
+                        if (entry.isIntersecting) {
+                            sticky.classList.remove('show');
+                        } else {
+                            sticky.classList.add('show');
+                        }
+                    });
+                }, { threshold: 0 });
+
+                observer.observe(hero);
+            }
+
+            // Initialize if appropriate
+            if (shouldActivate()) createObserver();
+
+            // Recreate observer on resize if crossing breakpoint
+            var lastMatch = shouldActivate();
+            window.addEventListener('resize', function() {
+                var match = shouldActivate();
+                if (match !== lastMatch) {
+                    lastMatch = match;
+                    if (match) createObserver();
+                    else if (observer) { observer.disconnect(); sticky.classList.remove('show'); }
+                }
+            });
+        })();
+    </script>
+  </body>
+</html>
