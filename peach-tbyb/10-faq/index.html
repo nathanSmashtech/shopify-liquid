@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>FAQ</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <section id="faq">
+        <div class="container">
+            <div class="headlines">
+                <h2>Frequently Asked Questions</h2>
+            </div>
+            <div class="accordion">
+              <div class="item">
+                  <h3>
+                      <span>How do I use Super Youth?</span>
+                      <span class="plus">+</span>
+                      <span class="minus">-</span>
+                  </h3>
+                  <p>Simply, add 1 scoop to an empty shaker bottle, then add 10 to 12 ounces of cold water or your favorite beverage. Shake briskly. Enjoy</p>
+              </div>
+              <div class="item">
+                  <h3>
+                      <span>How long will it take to see results?</span>
+                      <span class="plus">+</span>
+                      <span class="minus">-</span>
+                  </h3>
+                  <p>When taken daily, Super Youth helps support healthy skin, weight management, stronger hair & nails, and joint and bone health. Some users begin noticing benefits within 4 weeks with consistent use. For best results, use daily. Individual results will vary.</p>
+              </div>
+              <div class="item">
+                  <h3>
+                      <span>What is Super Youth and why do I need it?</span>
+                      <span class="plus">+</span>
+                      <span class="minus">-</span>
+                  </h3>
+                  <p>Super Youth contains all 5 types of collagen from 3 sources, along with apple cider vinegar, hyaluronic acid, prebiotics, probiotics, organic baobab, and vitamin C. Super Youth is non-GMO, sugar-free, dairy-free, and gluten-free — it’s also incredibly effective for supporting skin, hair, nails, and joint and gut health, and healthy weight.</p>
+              </div>
+              <div class="item">
+                  <h3>
+                      <span>What oes Super Youth taste like?</span>
+                      <span class="plus">+</span>
+                      <span class="minus">-</span>
+                  </h3>
+                  <p>Super Youth is a one-of-a-kind tropical-flavored collagen that is fruity, refreshing, and tastes amazing when mixed with water alone! Collagen has never tasted THIS good.</p>
+              </div>
+          </div>
+            <div class="button-container">
+                <cta-tp-1item-sub-tbyb>
+                    <button type="button" class="cta-tp-1item-sub-tbyb my-button" data-product-id="9424915267829" data-variant-id="47322875199733" data-selling-plan-id="4831019253">TRY IT FOR ONLY $27 »</button>
+                </cta-tp-1item-sub-tbyb>
+                <p class="guarantee"><span class="checkmark"></span> FREE Shipping + $50 in FREE Gifts.</p>
+            </div>
+        </div>
+    </section>
+    <script>
+      const items = document.querySelectorAll('.accordion .item');
+
+      items.forEach(item => {
+          item.querySelector('h3').addEventListener('click', () => {
+              item.classList.toggle('active');
+          });
+      });
+    </script>
+  </body>
+</html>
