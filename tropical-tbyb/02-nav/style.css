@@ -1,0 +1,56 @@
+#nav {
+  margin: 50px 0 0;
+}
+#nav .nav-items {
+  display: flex;
+  -moz-column-gap: 3px;
+       column-gap: 3px;
+  font-family: Muli, helvetica, verdana, arial, sans-serif;
+}
+#nav .nav-items a {
+  flex: 1;
+  height: 34px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  font-size: 16px;
+  color: #fff;
+  font-weight: 700;
+  text-decoration: none;
+}
+#nav .nav-items a .active {
+  position: absolute;
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 15px 20px 0 20px;
+  position: absolute;
+  inset: 36px 0 0;
+  margin: auto;
+}
+#nav .nav-items a.strawberry {
+  background: #f0005d;
+}
+#nav .nav-items a.strawberry .active {
+  border-color: #f0005d transparent transparent transparent;
+}
+#nav .nav-items a.tropical {
+  background: #e71791;
+}
+#nav .nav-items a.tropical .active {
+  border-color: #e71791 transparent transparent transparent;
+}
+#nav .nav-items a.peach {
+  background: #fa9384;
+}
+#nav .nav-items a.peach .active {
+  border-color: #fa9384 transparent transparent transparent;
+}
+#nav .nav-items a.orange {
+  background: #fba919;
+}
+#nav .nav-items a.orange .active {
+  border-color: #fba919 transparent transparent transparent;
+}/*# sourceMappingURL=style.css.map */
